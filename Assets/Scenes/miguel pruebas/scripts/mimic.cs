@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class mimic : MonoBehaviour
 {
-    public int score ;
+    public MovimientoOchoDirecciones movimientoOchoDirecciones ;
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        
+        int score = score1
+        scriptA.SumarPuntos(puntosASumar);
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class mimic : MonoBehaviour
             
             if (valor >= 5)
             {
-                score += score; 
+                score1 += score1; 
             }
 
             
@@ -29,7 +29,7 @@ public class mimic : MonoBehaviour
         else
         {
             valor<=4;
-            score -= score;
+            score1 -= score1;
 
         }
         
@@ -39,7 +39,7 @@ public class mimic : MonoBehaviour
             
             if (valor >= 5)
             {
-                score += score; 
+                score1 += score1; 
             }
 
             
@@ -47,7 +47,7 @@ public class mimic : MonoBehaviour
         else
         {
             valor<=4;
-            score -= score;
+            score1 -= score1;
 
         }
         
@@ -57,7 +57,7 @@ public class mimic : MonoBehaviour
             
             if (valor >= 5)
             {
-                score += score; 
+                score1 += score1; 
             }
 
             
@@ -65,7 +65,7 @@ public class mimic : MonoBehaviour
         else
         {
             valor<=4;
-            score -= score;
+            score1 -= score1;
 
         }
         

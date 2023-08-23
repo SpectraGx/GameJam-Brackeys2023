@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class mimic : MonoBehaviour
 {
     public int score ;
-    // Start is called before the first frame update
+     [SerializeField] int valor = 0 ;
+    
     void Start()
     {
         score = 0;
@@ -17,57 +19,52 @@ public class mimic : MonoBehaviour
     {
          if (CompareTag("tesoro1"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
             if (valor >= 5)
             {
                 score += score; 
             }
+            else if (valor <= 4)
+            {
+                score -= score;
+            }
 
             
         }
-        else
-        {
-            valor<=4;
-            score -= score;
 
-        }
         
          if (CompareTag("tesoro2"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
             if (valor >= 5)
             {
                 score += score; 
-            }
-
+            }   
             
-        }
-        else
-        {
-            valor<=4;
-            score -= score;
-
+            else if (valor <= 4)
+            {
+                score -= score;
+            }
         }
         
          if (CompareTag("tesoro3"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
-            if (valor >= 5)
+            if (valor == 5)
             {
                 score += score; 
+            }
+            else if (valor <= 4)
+            {
+                score -= score;
             }
 
             
         }
-        else
-        {
-            valor<=4;
-            score -= score;
 
-        }
         
     }
 }

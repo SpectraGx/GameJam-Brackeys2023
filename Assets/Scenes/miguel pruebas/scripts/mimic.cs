@@ -5,11 +5,15 @@ using UnityEngine;
 public class mimic : MonoBehaviour
 {
     public MovimientoOchoDirecciones movimientoOchoDirecciones ;
+
+    int valor;
+    int score, score1;
     // Start is called before the first frame update
     void Start()
     {
-        int score = score1
-        scriptA.SumarPuntos(puntosASumar);
+        //int score = 0;
+
+        //scriptA.SumarPuntos(puntosASumar);
     }
 
     // Update is called once per frame
@@ -17,57 +21,54 @@ public class mimic : MonoBehaviour
     {
          if (CompareTag("tesoro1"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
             if (valor >= 5)
             {
-                score1 += score1; 
+                score += score1; 
+            }
+            else if (valor <= 4)
+            {
+                score1 -= score1;
             }
 
             
         }
-        else
-        {
-            valor<=4;
-            score1 -= score1;
 
-        }
         
          if (CompareTag("tesoro2"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
             if (valor >= 5)
             {
                 score1 += score1; 
             }
+            else if (valor <= 4)
+            {
+                score1 -= score1;
 
-            
-        }
-        else
-        {
-            valor<=4;
-            score1 -= score1;
+            }
 
         }
+
         
          if (CompareTag("tesoro3"))
         {
-            int valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
+            valor = Random.Range(0, 10); // Genera un numero aleatorio entre 1 y 10
             
             if (valor >= 5)
             {
                 score1 += score1; 
             }
+            else if (valor <= 4)
+            {
+            score1 -= score1;
+            }
 
             
         }
-        else
-        {
-            valor<=4;
-            score1 -= score1;
 
-        }
         
     }
 }

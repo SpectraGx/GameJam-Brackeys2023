@@ -11,7 +11,8 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         score = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D Collision){
+    private void OnTriggerEnter2D(Collider2D Collision)
+    {
 
         if(Collision.gameObject.tag == "tesoro1")
         {
@@ -29,7 +30,26 @@ public class MovimientoOchoDirecciones : MonoBehaviour
             Debug.Log(score);
         }
 
+        if(Collision.gameObject.tag == "mimic1")
+            {
+                score-= 1;
+                Debug.Log(score);
+            }
+                    if(Collision.gameObject.tag == "mimic2")
+            {
+                score-= 2;
+                Debug.Log(score);
+            }
+                    if(Collision.gameObject.tag == "mimic3")
+            {
+                score-= 3;
+                Debug.Log(score);
+            }
+
     }
+
+          
+        
 
     void Update()
     {

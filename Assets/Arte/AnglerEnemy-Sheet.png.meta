@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -106,6 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -114,12 +153,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 31
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 15, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -131,13 +170,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_1
+      name: AnglerEnemy-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 1
-        width: 15
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,13 +191,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_2
+      name: AnglerEnemy-Sheet_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 1
-        width: 15
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,13 +212,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_3
+      name: AnglerEnemy-Sheet_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 1
+        y: 0
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,13 +233,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_4
+      name: AnglerEnemy-Sheet_6
       rect:
         serializedVersion: 2
         x: 96
-        y: 1
-        width: 15
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,13 +254,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_5
+      name: AnglerEnemy-Sheet_7
       rect:
         serializedVersion: 2
         x: 112
-        y: 1
-        width: 15
-        height: 15
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,16 +275,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_6
+      name: AnglerEnemy-Sheet_8
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 31
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 15, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -257,12 +296,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_7
+      name: AnglerEnemy-Sheet_10
       rect:
         serializedVersion: 2
         x: 160
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -278,12 +317,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_8
+      name: AnglerEnemy-Sheet_11
       rect:
         serializedVersion: 2
         x: 176
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -299,16 +338,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_9
+      name: AnglerEnemy-Sheet_12
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 31
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 15, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -320,12 +359,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_10
+      name: AnglerEnemy-Sheet_14
       rect:
         serializedVersion: 2
         x: 224
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -341,12 +380,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AnglerEnemy-Sheet_11
+      name: AnglerEnemy-Sheet_15
       rect:
         serializedVersion: 2
         x: 240
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -357,6 +396,90 @@ TextureImporter:
       bones: []
       spriteID: ebfe1b2b9094ab24797846b0509e2a41
       internalID: 1278479201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerEnemy-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175f49ae3ad52664eb90fc4175ae08d5
+      internalID: 1137431055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerEnemy-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd644fe44b50ccb42a3cea66f07efae3
+      internalID: 1937760202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerEnemy-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ddbfb8a2632874cbe0c7fbc847d8b0
+      internalID: 1949719831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerEnemy-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8a2c140a88e08409f6340a53e074a4
+      internalID: 2142641779
       vertices: []
       indices: 
       edges: []
@@ -373,17 +496,21 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       AnglerEnemy-Sheet_0: -1090286198
-      AnglerEnemy-Sheet_1: 1247774575
-      AnglerEnemy-Sheet_10: 30294105
-      AnglerEnemy-Sheet_11: 1278479201
-      AnglerEnemy-Sheet_2: -337320898
-      AnglerEnemy-Sheet_3: -346873130
-      AnglerEnemy-Sheet_4: -2005031677
-      AnglerEnemy-Sheet_5: -246456806
-      AnglerEnemy-Sheet_6: -763030713
-      AnglerEnemy-Sheet_7: -1267631314
-      AnglerEnemy-Sheet_8: -1990353981
-      AnglerEnemy-Sheet_9: -1686175506
+      AnglerEnemy-Sheet_1: 1137431055
+      AnglerEnemy-Sheet_10: -1267631314
+      AnglerEnemy-Sheet_11: -1990353981
+      AnglerEnemy-Sheet_12: -1686175506
+      AnglerEnemy-Sheet_13: 2142641779
+      AnglerEnemy-Sheet_14: 30294105
+      AnglerEnemy-Sheet_15: 1278479201
+      AnglerEnemy-Sheet_2: 1247774575
+      AnglerEnemy-Sheet_3: -337320898
+      AnglerEnemy-Sheet_4: -346873130
+      AnglerEnemy-Sheet_5: 1937760202
+      AnglerEnemy-Sheet_6: -2005031677
+      AnglerEnemy-Sheet_7: -246456806
+      AnglerEnemy-Sheet_8: -763030713
+      AnglerEnemy-Sheet_9: 1949719831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

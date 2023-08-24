@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    private void OnColliderEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Siuuu"))
         {
@@ -12,6 +12,6 @@ public class Enemigo : MonoBehaviour
             GameManager.Instance.PerderVida();
         }
     }
-   
 
+ 
 }

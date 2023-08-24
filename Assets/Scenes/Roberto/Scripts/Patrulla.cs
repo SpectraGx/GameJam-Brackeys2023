@@ -9,13 +9,13 @@ public class Patrulla : MonoBehaviour
 
     [SerializeField] private float distanciaMinima;
 
-    private int numeroAleatorio;
+    private int siguientePaso = 0;
 
     private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-        numeroAleatorio = Random.Range(0, puntosMovimientos.Length);
+       
         spriteRenderer = GetComponent<SpriteRenderer>();
         Girar();
 
@@ -24,20 +24,24 @@ public class Patrulla : MonoBehaviour
 
     private void Update()
     {
-        transform.position= Vector3.MoveTowards(transform.position, puntosMovimientos[numeroAleatorio].position, velocidadMovimiento * Time.deltaTime);
+        transform.position= Vector3.MoveTowards(transform.position, puntosMovimientos[siguientePaso].position, velocidadMovimiento * Time.deltaTime);
 
 
-        if(Vector2.Distance(transform.position, puntosMovimientos[numeroAleatorio].position) < distanciaMinima)
+        if(Vector2.Distance(transform.position, puntosMovimientos[siguientePaso].position) < distanciaMinima)
         {
 
-            numeroAleatorio = Random.Range(0, puntosMovimientos.Length);
+            siguientePaso += 1;
+            if (siguientePaso >= puntosMovimientos.Length)
+            {
+                siguientePaso = 0;
+            }
             Girar();
         }
     }
 
     private void Girar() 
     {
-        if (transform.position.x < puntosMovimientos[numeroAleatorio].position.x)
+        if (transform.position.x < puntosMovimientos[siguientePaso].position.x)
         {
          spriteRenderer.flipX = true;
         }

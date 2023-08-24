@@ -8,6 +8,9 @@ TagManager:
   - tesoro1
   - tesoro2
   - tesoro3
+  - mimic1
+  - mimic2
+  - mimic3
   layers:
   - Default
   - TransparentFX

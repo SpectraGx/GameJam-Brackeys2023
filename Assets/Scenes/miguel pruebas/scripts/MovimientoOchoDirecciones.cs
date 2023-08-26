@@ -13,7 +13,9 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     private string currentState;
 
     //estados de animacion
-    const string Player_Idel = "FullHPPlayerIdle";
+
+    const string medusa = "medusa";
+    //const string Player_Idel = "FullHPPlayerIdle";
     const string Player_Horizontal = "PlayerIdleDerecha";
     const string Player_1_hit = "FirstHitPlayerAnim";
     const string Player_Idel2 = "2HPPlayerIdle";
@@ -75,7 +77,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
                     else
                     {
 
-                        ChangeAnimationsState(Player_Idel);
+                        ChangeAnimationsState(medusa);
                     }
                     break;
                 }

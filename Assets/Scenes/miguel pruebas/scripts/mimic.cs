@@ -8,7 +8,7 @@ public class mimic : MonoBehaviour
     public int MChance;
     public int TSize;
     public float ScoreVar;
-
+    public FloatVariable Score;
 
     void Awake()
     {
@@ -34,6 +34,7 @@ public class mimic : MonoBehaviour
                     case 1:
                     {
                         //Pequeño asi que suma 20 puntos;
+                        ScoreVar = 20;
                         // Cambia Anim a T Med
 
                         break;
@@ -42,6 +43,7 @@ public class mimic : MonoBehaviour
                     case 2:
                     {
                         //Grande asi que suma 30 puntos;
+                        ScoreVar = 30;
                         // Cambia Anim a T Big
 
                         break;
@@ -97,6 +99,7 @@ public class mimic : MonoBehaviour
 
         if(Collision.gameObject.tag == "nave")
         {
+            ScoreUpdate();
             Destroy(this.gameObject);
 
         }
@@ -105,7 +108,7 @@ public class mimic : MonoBehaviour
 
     void ScoreUpdate()
     {
-        //Score += ScoreVar
+        Score.floatValue += ScoreVar;
     }
 
 

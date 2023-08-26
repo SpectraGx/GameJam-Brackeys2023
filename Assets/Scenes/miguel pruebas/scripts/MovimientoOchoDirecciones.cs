@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class MovimientoOchoDirecciones : MonoBehaviour
 {
+    public FloatVariable HP;
+    public FloatVariable Score;
     Animator animator;
     public float velocidad = 5f; // Velocidad de movimiento
-    public int score;
+   
 
     private string currentState;
 
@@ -23,7 +25,32 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.Play("FullHPPlayerIdle");
-        score = 0;
+        Score.floatValue = 0;
+
+
+        switch (HP.floatValue)
+        {
+            case 3:
+            {
+                
+              break;
+            }
+            case 2:
+            {
+                
+
+              break;
+            }
+            case 1:
+            {
+                
+
+              break;
+            }
+
+
+        }
+
     }
 
     void ChangeAnimationsState(string newState)
@@ -35,45 +62,6 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         currentState = newState;
     }
 
-    private void OnTriggerEnter2D(Collider2D Collision)
-    {
-
-        if(Collision.gameObject.tag == "tesoro1")
-        {
-            score+= 1;
-            Debug.Log(score);
-        }
-                if(Collision.gameObject.tag == "tesoro2")
-        {
-            score+= 2;
-            Debug.Log(score);
-        }
-                if(Collision.gameObject.tag == "tesoro3")
-        {
-            score+= 3;
-            Debug.Log(score);
-        }
-
-        if(Collision.gameObject.tag == "mimic1")
-            {
-                score-= 1;
-                Debug.Log(score);
-            }
-                    if(Collision.gameObject.tag == "mimic2")
-            {
-                score-= 2;
-                Debug.Log(score);
-            }
-                    if(Collision.gameObject.tag == "mimic3")
-            {
-                score-= 3;
-                Debug.Log(score);
-            }
-
-    }
-
-          
-        
 
     void Update()
     {
@@ -90,19 +78,19 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
         if (movimientoHorizontal<0)
         {
-            //desplazamiento = -velocidad;
+            
            transform.localScale = new Vector3(-1f,1f,0f); 
            ChangeAnimationsState(Player_Horizontal);
         }
         else if (movimientoHorizontal>0)
         {
-            //desplazamiento = velocidad;
+            
             transform.localScale = new Vector3(1f,1f,0f);
             ChangeAnimationsState(Player_Horizontal);
         }
         else
         {
-            //desplazamiento = 0f;
+            
             ChangeAnimationsState(Player_Idel);
         }
 

@@ -14,8 +14,8 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
     //estados de animacion
 
-    const string medusa = "medusa";
-    //const string Player_Idel = "FullHPPlayerIdle";
+    
+    const string Player_Idel = "FullHPPlayerIdle";
     const string Player_Horizontal = "PlayerIdleDerecha";
     const string Player_1_hit = "FirstHitPlayerAnim";
     const string Player_Idel2 = "2HPPlayerIdle";
@@ -23,6 +23,12 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     const string Player_2_hit = "SecondHitPlayerAnim";
     const string Player_Idel3 = "LastHPPlayerIdle";
     const string Player_2hit_Move = "playerIdelDerechadaño2";
+
+    void Awake ()
+    {
+        //quitar armado final dentro de 3 o 4 horas
+        HP.floatValue = 3;
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -77,7 +83,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
                     else
                     {
 
-                        ChangeAnimationsState(medusa);
+                        ChangeAnimationsState(Player_Idel);
                     }
                     break;
                 }

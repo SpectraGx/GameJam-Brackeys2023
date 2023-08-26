@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
+    public FloatVariable PlayerHP;
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Siuuu"))
+        if (other.gameObject.CompareTag("nave"))
         {
-          
-            GameManager.Instance.PerderVida();
+            PlayerHP.floatValue--;
         }
     }
 

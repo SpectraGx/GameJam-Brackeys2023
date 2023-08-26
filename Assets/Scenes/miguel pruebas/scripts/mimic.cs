@@ -5,6 +5,15 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class mimic : MonoBehaviour
 {
+    Animator animator;
+    private string currentState;
+
+    const string tesoro1="tesoro1";
+    const string tesoro2="tesoro2";
+    const string tesoro3="tesoro3";
+    const string mimic1="mimic1";
+    const string mimic2="mimic2";
+    const string mimic3="mimic3";
     public int MChance;
     public int TSize;
     public float ScoreVar;
@@ -16,6 +25,7 @@ public class mimic : MonoBehaviour
     }
     void Start()
     {
+        animator = GetComponent<Animator>();
         switch (MChance)
         {
             case 0:
@@ -27,6 +37,7 @@ public class mimic : MonoBehaviour
                         //Pequeño asi que suma 10 puntos;
                         ScoreVar = 10;
                         // Cambia Anim a T Small
+                        ChangeAnimationsState(tesoro1);
 
                         break;
                     }
@@ -36,6 +47,7 @@ public class mimic : MonoBehaviour
                         //Pequeño asi que suma 20 puntos;
                         ScoreVar = 20;
                         // Cambia Anim a T Med
+                        ChangeAnimationsState(tesoro2);
 
                         break;
                     }
@@ -45,6 +57,7 @@ public class mimic : MonoBehaviour
                         //Grande asi que suma 30 puntos;
                         ScoreVar = 30;
                         // Cambia Anim a T Big
+                        ChangeAnimationsState(tesoro3);
 
                         break;
                     }
@@ -61,18 +74,21 @@ public class mimic : MonoBehaviour
                     case 0:
                     
                     // Cambia Anim a T Small
+                    ChangeAnimationsState(mimic1);
 
                     break;
 
                     case 1:
 
                     // Cambia Anim a T Med
+                    ChangeAnimationsState(mimic2);
 
                     break;
 
                     case 2:
 
                     // Cambia Anim a T Big
+                    ChangeAnimationsState(mimic3);
 
                     break;
                 }
@@ -84,6 +100,15 @@ public class mimic : MonoBehaviour
 
 
         }
+    }
+
+     void ChangeAnimationsState(string newState)
+    {
+        if(currentState == newState) return;
+
+        animator.Play(newState);
+
+        currentState = newState;
     }
 
     // Update is called once per frame
@@ -115,8 +140,9 @@ public class mimic : MonoBehaviour
 
     void MimicChance()
     {
-        MChance = Random.Range(0,1);
-        TSize = Random.Range(0,2);
+        MChance = Random.Range(0,2);
+        TSize = Random.Range(0,3);
+        Debug.Log("tiro" + MChance + TSize);
     }
 }
 

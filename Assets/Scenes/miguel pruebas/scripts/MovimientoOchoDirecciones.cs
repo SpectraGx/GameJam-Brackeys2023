@@ -8,54 +8,33 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     public FloatVariable Score;
     Animator animator;
     public float velocidad = 5f; // Velocidad de movimiento
-   
+
 
     private string currentState;
 
     //estados de animacion
-    const string Player_Idel="FullHPPlayerIdle";
-    const string Player_Horizontal="PlayerIdleDerecha";
-    const string Player_1_hit="FirstHitPlayerAnim";
-    const string Player_Idel2="2HPPlayerIdle";
-    const string Player_1hit_Move="PLayerIdelDErechaDaño1";
-    const string Player_2_hit="SecondHitPlayerAnim";
-    const string Player_Idel3="LastHPPlayerIdle";
-    const string Player_2hit_Move="playerIdelDerechadaño2";
-       void Start()
+    const string Player_Idel = "FullHPPlayerIdle";
+    const string Player_Horizontal = "PlayerIdleDerecha";
+    const string Player_1_hit = "FirstHitPlayerAnim";
+    const string Player_Idel2 = "2HPPlayerIdle";
+    const string Player_1hit_Move = "PLayerIdelDErechaDaño1";
+    const string Player_2_hit = "SecondHitPlayerAnim";
+    const string Player_Idel3 = "LastHPPlayerIdle";
+    const string Player_2hit_Move = "playerIdelDerechadaño2";
+    void Start()
     {
         animator = GetComponent<Animator>();
         animator.Play("FullHPPlayerIdle");
         Score.floatValue = 0;
 
 
-        switch (HP.floatValue)
-        {
-            case 3:
-            {
-                
-              break;
-            }
-            case 2:
-            {
-                
 
-              break;
-            }
-            case 1:
-            {
-                
-
-              break;
-            }
-
-
-        }
 
     }
 
     void ChangeAnimationsState(string newState)
     {
-        if(currentState == newState) return;
+        if (currentState == newState) return;
 
         animator.Play(newState);
 
@@ -66,7 +45,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     void Update()
     {
         // Obtener la entrada del jugador (teclas de flecha o W,S,A,D)
-        
+
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
 
@@ -76,22 +55,76 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         // Aplicar el desplazamiento al objeto
         transform.Translate(desplazamiento);
 
-        if (movimientoHorizontal<0)
+        switch (HP.floatValue)
         {
-            
-           transform.localScale = new Vector3(-1f,1f,0f); 
-           ChangeAnimationsState(Player_Horizontal);
-        }
-        else if (movimientoHorizontal>0)
-        {
-            
-            transform.localScale = new Vector3(1f,1f,0f);
-            ChangeAnimationsState(Player_Horizontal);
-        }
-        else
-        {
-            
-            ChangeAnimationsState(Player_Idel);
+            case 3:
+                {
+
+                    if (movimientoHorizontal < 0)
+                    {
+
+                        transform.localScale = new Vector3(-1f, 1f, 0f);
+                        ChangeAnimationsState(Player_Horizontal);
+                    }
+                    else if (movimientoHorizontal > 0)
+                    {
+
+                        transform.localScale = new Vector3(1f, 1f, 0f);
+                        ChangeAnimationsState(Player_Horizontal);
+                    }
+                    else
+                    {
+
+                        ChangeAnimationsState(Player_Idel);
+                    }
+                    break;
+                }
+            case 2:
+                {
+                    if (movimientoHorizontal < 0)
+                    {
+
+                        transform.localScale = new Vector3(-1f, 1f, 0f);
+                        ChangeAnimationsState(Player_1hit_Move);
+                    }
+                    else if (movimientoHorizontal > 0)
+                    {
+
+                        transform.localScale = new Vector3(1f, 1f, 0f);
+                        ChangeAnimationsState(Player_1hit_Move);
+                    }
+                    else
+                    {
+
+                        ChangeAnimationsState(Player_Idel2);
+                    }
+                    break;
+                }
+            case 1:
+                {
+                  if (movimientoHorizontal < 0)
+                    {
+
+                        transform.localScale = new Vector3(-1f, 1f, 0f);
+                        ChangeAnimationsState(Player_2hit_Move);
+                    }
+                    else if (movimientoHorizontal > 0)
+                    {
+
+                        transform.localScale = new Vector3(1f, 1f, 0f);
+                        ChangeAnimationsState(Player_2hit_Move);
+                    }
+                    else
+                    {
+
+                        ChangeAnimationsState(Player_Idel3);
+                    }
+
+
+                    break;
+                }
+
+
         }
 
     }

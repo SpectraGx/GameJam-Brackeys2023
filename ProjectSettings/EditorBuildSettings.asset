@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Roberto/Otras escenas/MainMenu.unity
+    guid: 260c6fb06b15e364f9f3a5b19eb926f2
+  - enabled: 1
+    path: Assets/Scenes/Roberto/Otras escenas/GamePlay.unity
+    guid: de3c155f4bf69394f9f30b73e3c92481
   m_configObjects: {}

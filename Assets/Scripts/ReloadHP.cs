@@ -13,8 +13,6 @@ public class ReloadHP : MonoBehaviour
 
     public void ReloadLives()
     {
-
-
         HP.floatValue = 3;
         Score.floatValue = 0;
     }

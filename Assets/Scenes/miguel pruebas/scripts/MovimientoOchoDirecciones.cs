@@ -142,5 +142,6 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     void OnDeath()
     {
         SceneManager.LoadScene("Death");
+        PlayerPrefs.SetFloat("Hi-Score", Score.floatValue);
     }
 }

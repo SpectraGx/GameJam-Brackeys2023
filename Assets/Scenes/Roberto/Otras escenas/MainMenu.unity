@@ -2670,6 +2670,7 @@ GameObject:
   - component: {fileID: 827158118}
   - component: {fileID: 827158120}
   - component: {fileID: 827158119}
+  - component: {fileID: 827158121}
   m_Layer: 5
   m_Name: MenuMain
   m_TagString: Untagged
@@ -2740,6 +2741,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827158117}
   m_CullTransparentMesh: 1
+--- !u!114 &827158121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827158117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ca276797d4a394b966ed033f804205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: {fileID: 11400000, guid: fcb207e663dae4d478d111b84383ba47, type: 2}
 --- !u!1 &837245404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,8 +2990,8 @@ Transform:
   m_GameObject: {fileID: 939522194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -561.8508, y: -289.9889, z: 0}
-  m_LocalScale: {x: 1.5281066, y: 1.491948, z: 1}
+  m_LocalPosition: {x: -399.9623, y: -225.1229, z: 0}
+  m_LocalScale: {x: 1.6208731, y: 1.6421872, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 827158118}
@@ -3867,6 +3881,18 @@ MonoBehaviour:
       - m_Target: {fileID: 338630582}
         m_TargetAssemblyTypeName: MenuInicial, Assembly-CSharp
         m_MethodName: Jugar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 827158121}
+        m_TargetAssemblyTypeName: ReloadHP, Assembly-CSharp
+        m_MethodName: ReloadLives
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

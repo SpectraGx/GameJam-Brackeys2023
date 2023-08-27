@@ -22,7 +22,7 @@ public class Pez_SeguirBehaivor : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         tiempoSeguir = tiempoBase;
-        jugador = GameObject.FindGameObjectWithTag("Siuuu").GetComponent<Transform>();
+        jugador = GameObject.FindGameObjectWithTag("nave").GetComponent<Transform>();
         Anglerfish = animator.gameObject.GetComponent<EnemyTracking>();
     }
 

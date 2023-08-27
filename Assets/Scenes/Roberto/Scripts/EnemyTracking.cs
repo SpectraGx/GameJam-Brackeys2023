@@ -31,7 +31,7 @@ public class EnemyTracking : MonoBehaviour
 
     public void Girar(Vector3 obejetivo)
     {
-    if(transform.position.x<obejetivo.x)
+    if(transform.position.x < obejetivo.x)
         {
             spriteRenderer.flipX= true;
         }

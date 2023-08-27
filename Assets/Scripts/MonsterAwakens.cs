@@ -29,6 +29,7 @@ public class MonsterAwakens : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        monsterSource = GetComponent<AudioSource>();
         animator.Play("BaitBoss");
     }
 

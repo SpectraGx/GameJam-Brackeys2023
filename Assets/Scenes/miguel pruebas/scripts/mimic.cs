@@ -21,9 +21,14 @@ public class mimic : MonoBehaviour
 
     public int MimicAllow;
 
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip audioTes;
+    [SerializeField] private AudioClip audioMimic;
+
     void Awake()
     {
         MimicChance();
+        audioSource = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -150,7 +155,17 @@ public class mimic : MonoBehaviour
         if(Collision.gameObject.tag == "nave")
         {
             ScoreUpdate();
+            if (MChance==0){
+                ControllAudio.Instance.EjecutarSound(audioTes);
+                Destroy(gameObject);
+            }
+            else if (MChance==1){
+                ControllAudio.Instance.EjecutarSound(audioMimic);
+                Destroy(gameObject);
+            }
             Destroy(this.gameObject);
+
+            
 
         }
 

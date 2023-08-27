@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHP: {fileID: 11400000, guid: fcb207e663dae4d478d111b84383ba47, type: 2}
+  audioCris: {fileID: 8300000, guid: 34c244b59738c3c4c89397d3b59b2cc0, type: 3}
 --- !u!61 &8532004491843376333
 BoxCollider2D:
   m_ObjectHideFlags: 0

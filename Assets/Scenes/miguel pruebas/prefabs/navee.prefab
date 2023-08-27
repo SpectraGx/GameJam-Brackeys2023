@@ -125,6 +125,7 @@ MonoBehaviour:
   HP: {fileID: 11400000, guid: fcb207e663dae4d478d111b84383ba47, type: 2}
   Score: {fileID: 11400000, guid: 20b63d6bbdc6ac241b469652c7d789d6, type: 2}
   velocidad: 5
+  audioExplo: {fileID: 8300000, guid: a8e785c6c9b924f439e15a7231d62d42, type: 3}
 --- !u!60 &1042229061644003019
 PolygonCollider2D:
   m_ObjectHideFlags: 0

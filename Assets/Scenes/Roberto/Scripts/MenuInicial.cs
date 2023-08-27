@@ -20,4 +20,9 @@ public class MenuInicial : MonoBehaviour
         Application.Quit();
     }
 
+    public void Back(){
+        Debug.Log("Regrese puta");
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

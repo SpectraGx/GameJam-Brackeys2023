@@ -3386,7 +3386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: {fileID: 11400000, guid: fcb207e663dae4d478d111b84383ba47, type: 2}
-  Score: {fileID: 0}
+  Score: {fileID: 11400000, guid: 20b63d6bbdc6ac241b469652c7d789d6, type: 2}
+  HiScore: {fileID: 11400000, guid: 2ec176d9b6ad9e24dada0ef02bcc9a1f, type: 2}
 --- !u!1 &837245404
 GameObject:
   m_ObjectHideFlags: 0

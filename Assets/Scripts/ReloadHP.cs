@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ReloadHP : MonoBehaviour
 {
-    public FloatVariable HP;
+    public FloatVariable HP, Score;
     public void ReloadLives()
     {
         HP.floatValue = 3;
+        Score.floatValue = 0;
     }
 }

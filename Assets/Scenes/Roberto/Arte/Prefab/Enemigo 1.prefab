@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6304999227945727233}
   - component: {fileID: 7841808885862892330}
   - component: {fileID: 7480854458182344120}
+  - component: {fileID: -8665483339420555595}
   m_Layer: 0
   m_Name: Enemigo 1
   m_TagString: Untagged
@@ -143,6 +144,20 @@ MonoBehaviour:
   jugador: {fileID: 0}
   distancia: 0
   puntoinicial: {x: 0, y: 0, z: 0}
+--- !u!114 &-8665483339420555595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311674635319837514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f086d8794ea0d40ac1ccd8a480d7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHP: {fileID: 11400000, guid: fcb207e663dae4d478d111b84383ba47, type: 2}
+  audioCris: {fileID: 8300000, guid: 34c244b59738c3c4c89397d3b59b2cc0, type: 3}
 --- !u!1 &7645421050890355788
 GameObject:
   m_ObjectHideFlags: 0

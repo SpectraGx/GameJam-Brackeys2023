@@ -19,6 +19,8 @@ public class mimic : MonoBehaviour
     public float ScoreVar;
     public FloatVariable Score;
 
+    public int MimicAllow;
+
     void Awake()
     {
         MimicChance();
@@ -61,6 +63,14 @@ public class mimic : MonoBehaviour
 
                         break;
                     }
+
+                    
+                    default:
+                    
+                        ChangeAnimationsState(tesoro1);
+                        ScoreVar = 10;
+
+                    break;
                 }
 
                 break;
@@ -73,28 +83,43 @@ public class mimic : MonoBehaviour
                 {
                     case 0:
                     
-                    // Cambia Anim a T Small
-                    ChangeAnimationsState(mimic1);
+                        // Cambia Anim a T Small
+                        ChangeAnimationsState(mimic1);
 
                     break;
 
                     case 1:
 
-                    // Cambia Anim a T Med
-                    ChangeAnimationsState(mimic2);
+                        // Cambia Anim a T Med
+                        ChangeAnimationsState(mimic2);
 
                     break;
 
                     case 2:
 
-                    // Cambia Anim a T Big
-                    ChangeAnimationsState(mimic3);
+                        // Cambia Anim a T Big
+                        ChangeAnimationsState(mimic3);
 
                     break;
+
+
+                    default:
+                    
+                        ChangeAnimationsState(mimic1);
+
+                    break;
+                    
                 }
 
 
 
+                break;
+            }
+
+            default:
+            {
+                ChangeAnimationsState(tesoro1);
+                ScoreVar = 10;
                 break;
             }
 
@@ -140,7 +165,8 @@ public class mimic : MonoBehaviour
 
     void MimicChance()
     {
-        MChance = Random.Range(0,2);
+        if(MimicAllow <= 0 || MimicAllow >= 3) MimicAllow = 2; 
+        MChance = Random.Range(0,MimicAllow);
         TSize = Random.Range(0,3);
         Debug.Log("tiro" + MChance + TSize);
     }

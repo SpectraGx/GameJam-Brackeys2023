@@ -11,6 +11,7 @@ public class Enemigo : MonoBehaviour
         if (other.gameObject.CompareTag("nave"))
         {
             PlayerHP.floatValue--;
+            ScreenShakeV2.Instance.ShakeCamera(3f, 0.1f);
         }
     }
     

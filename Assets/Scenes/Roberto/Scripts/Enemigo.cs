@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    public CamaraTemblor camaraTemblor;
+    
     public FloatVariable PlayerHP;
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -14,12 +14,6 @@ public class Enemigo : MonoBehaviour
         }
     }
     
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("nave"))
-        {
-            camaraTemblor.ShakeCamera();
-        }
-    }
+
  
 }

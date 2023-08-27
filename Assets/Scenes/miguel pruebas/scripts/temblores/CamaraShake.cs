@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class CamaraTemblor : MonoBehaviour
+public class CamaraShake : MonoBehaviour
 {
- public float intensidad = 1.0f;
+    public float intensidad = 1.0f;
     public float duracion = 0.5f;
 
     private CinemachineVirtualCamera virtualCamera;
@@ -15,11 +15,6 @@ public class CamaraTemblor : MonoBehaviour
     {
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
         noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-    }
-
-    public void Update()
-    {
-        
     }
 
     public void ShakeCamera()
@@ -32,4 +27,5 @@ public class CamaraTemblor : MonoBehaviour
     {
         noise.m_AmplitudeGain = 0;
     }
+    
 }

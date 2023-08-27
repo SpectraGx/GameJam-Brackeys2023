@@ -4,15 +4,14 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
     public Transform pj; // Referencia al transform del jugador
-    public float moveSpeed = 2f; // Velocidad de movimiento del enemigo
+    public float moveSpeed = 5f; // Velocidad de movimiento del enemigo
 
     public FloatVariable PlayerHP;
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("nave"))
         {
-            PlayerHP.floatValue--;
-            PlayerHP.floatValue--;
+            PlayerHP.floatValue=0;
         }
     }
 

@@ -11,12 +11,10 @@ public class Patrulla : MonoBehaviour
 
     private int siguientePaso = 0;
 
-    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-       
-        spriteRenderer = GetComponent<SpriteRenderer>();
+
         Girar();
 
     }
@@ -24,10 +22,10 @@ public class Patrulla : MonoBehaviour
 
     private void Update()
     {
-        transform.position= Vector3.MoveTowards(transform.position, puntosMovimientos[siguientePaso].position, velocidadMovimiento * Time.deltaTime);
+        transform.localPosition = Vector3.MoveTowards(transform.position, puntosMovimientos[siguientePaso].position, velocidadMovimiento * Time.deltaTime);
+        Girar();
 
-
-        if(Vector2.Distance(transform.position, puntosMovimientos[siguientePaso].position) < distanciaMinima)
+        if(Vector2.Distance(transform.localPosition, puntosMovimientos[siguientePaso].position) < distanciaMinima)
         {
 
             siguientePaso += 1;
@@ -35,21 +33,18 @@ public class Patrulla : MonoBehaviour
             {
                 siguientePaso = 0;
             }
-            Girar();
         }
     }
 
     private void Girar() 
     {
-        if (transform.position.x < puntosMovimientos[siguientePaso].position.x)
-        {
-         spriteRenderer.flipX = true;
-        }
-        else 
-        { 
-         spriteRenderer.flipY = false;
-        }
 
+        if((puntosMovimientos[siguientePaso].position.x > 0 && transform.localScale.x != 1) || (puntosMovimientos[siguientePaso].position.x < 0 && transform.localScale.x != -1))
+        {
+            Vector3 transformScale = transform.localScale;
+            transformScale.x *= -1;
+            transform.localScale = transformScale;
+        }
 
     }
 }

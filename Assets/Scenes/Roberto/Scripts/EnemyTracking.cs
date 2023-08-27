@@ -12,33 +12,27 @@ public class EnemyTracking : MonoBehaviour
 
     private Animator animator;
 
-    private SpriteRenderer spriteRenderer;
-
 
     private void Start()
     {
         animator= GetComponent<Animator>();
         puntoinicial = transform.position;
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
     private void Update()
     {
-        distancia = Vector2.Distance(transform.position, jugador.position);
+        distancia = Vector2.Distance(puntoinicial, jugador.position);
         animator.SetFloat("Distancia", distancia);
     }
 
-    public void Girar(Vector3 obejetivo)
+    public void Girar(Vector3 objective)
     {
-    if(transform.position.x < obejetivo.x)
+    if((objective.x > 0 && transform.localScale.x != 1) || (objective.x < 0 && transform.localScale.x != -1))
         {
-            spriteRenderer.flipX= true;
-        }
-    else
-        {
-
-            spriteRenderer.flipY= false;
+            Vector3 transformScale = transform.localScale;
+            transformScale.x *= -1;
+            transform.localScale = transformScale;
         }
     }
 }

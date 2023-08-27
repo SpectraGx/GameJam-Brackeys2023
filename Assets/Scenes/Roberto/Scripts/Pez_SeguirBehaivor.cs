@@ -24,6 +24,7 @@ public class Pez_SeguirBehaivor : StateMachineBehaviour
         tiempoSeguir = tiempoBase;
         jugador = GameObject.FindGameObjectWithTag("nave").GetComponent<Transform>();
         Anglerfish = animator.gameObject.GetComponent<EnemyTracking>();
+        //animator.transform.position = Anglerfish.transform.position;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks Siuu
@@ -34,10 +35,6 @@ public class Pez_SeguirBehaivor : StateMachineBehaviour
         Anglerfish.Girar(jugador.position);
         tiempoSeguir -= Time.deltaTime;
 
-        if(tiempoSeguir <= 0)
-        {
-            animator.SetTrigger("Volver");
-        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

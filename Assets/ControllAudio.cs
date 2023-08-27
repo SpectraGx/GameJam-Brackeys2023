@@ -7,7 +7,9 @@ public class ControllAudio : MonoBehaviour
     public static ControllAudio Instance;
     private AudioSource audioSource;
 
-    private void Awake(){
+    private void Awake()
+    
+    {
         if (Instance==null){
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -20,6 +22,6 @@ public class ControllAudio : MonoBehaviour
     }
 
     public void EjecutarSound(AudioClip sound){
-        audioSource.PlayOneShot(sound);
+        audioSource?.PlayOneShot(sound);
     }
 }

@@ -155,15 +155,17 @@ public class mimic : MonoBehaviour
         if(Collision.gameObject.tag == "nave")
         {
             ScoreUpdate();
-            if (MChance==0){
+            if (MChance==0)
+            {
                 ControllAudio.Instance.EjecutarSound(audioTes);
-                Destroy(gameObject);
             }
-            else if (MChance==1){
+
+            else if (MChance==1)
+            {
                 ControllAudio.Instance.EjecutarSound(audioMimic);
-                Destroy(gameObject);
             }
-            Destroy(this.gameObject);
+            
+            Destroy(gameObject);
 
             
 

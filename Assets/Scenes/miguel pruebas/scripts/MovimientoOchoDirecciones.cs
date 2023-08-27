@@ -17,18 +17,13 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     
     const string Player_Idel = "FullHPPlayerIdle";
     const string Player_Horizontal = "PlayerIdleDerecha";
-    const string Player_1_hit = "FirstHitPlayerAnim";
     const string Player_Idel2 = "2HPPlayerIdle";
     const string Player_1hit_Move = "PLayerIdelDErechaDaño1";
-    const string Player_2_hit = "SecondHitPlayerAnim";
     const string Player_Idel3 = "LastHPPlayerIdle";
     const string Player_2hit_Move = "playerIdelDerechadaño2";
+    const string Player_Death = "PlayerDeath";
 
-    void Awake ()
-    {
-        //quitar armado final dentro de 3 o 4 horas
-        HP.floatValue = 3;
-    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -131,6 +126,11 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
                     break;
                 }
+            case 0:
+            {
+                ChangeAnimationsState(Player_Death);
+                break;
+            }
 
 
         }

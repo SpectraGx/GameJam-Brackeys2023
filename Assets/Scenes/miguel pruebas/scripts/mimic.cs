@@ -21,14 +21,14 @@ public class mimic : MonoBehaviour
 
     public int MimicAllow;
 
-    private AudioSource audioSource;
+
     [SerializeField] private AudioClip audioTes;
     [SerializeField] private AudioClip audioMimic;
 
     void Awake()
     {
         MimicChance();
-        audioSource = GetComponent<AudioSource>();
+
     }
     void Start()
     {
@@ -141,13 +141,6 @@ public class mimic : MonoBehaviour
         currentState = newState;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D Collision)
     {
@@ -164,7 +157,7 @@ public class mimic : MonoBehaviour
             {
                 ControllAudio.Instance.EjecutarSound(audioMimic);
             }
-            
+
             Destroy(gameObject);
 
             

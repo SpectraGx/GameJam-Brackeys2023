@@ -11,15 +11,17 @@ public class ScoreScript : MonoBehaviour
     
     void Start()
     {
-        if(Score.floatValue > HiScore.floatValue)
+        if(Score.floatValue >= HiScore.floatValue)
         {
             HiScore.floatValue = Score.floatValue;
         }
 
+    }
+    void Update()
+    {
         ScoreText.text = "SCORE: " + Score.floatValue;
 
         HiScoreText.text = "HI SCORE: " + HiScore.floatValue;
-        
     }
 
 }

@@ -7,6 +7,7 @@ public class MonsterAwakens : MonoBehaviour
 {
 
     Animator animator;
+    AudioSource monsterSource;
 
     private string currentState;
 
@@ -37,6 +38,7 @@ public class MonsterAwakens : MonoBehaviour
         if (other.gameObject.CompareTag("nave"))
         {
             ChangeAnimationsState(M_Awakes);
+            monsterSource?.Play();
         }
     }
 

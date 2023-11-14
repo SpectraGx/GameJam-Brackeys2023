@@ -1,22 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class mimic : MonoBehaviour
+
+public class MimicMachineState : MonoBehaviour
 {
-    /*
-    private enum State{
+    private enum State
+    {
         Tesoro,
         Mimic
     }
 
     private State currentState;
-    */
-
-    Animator animator;
-    private string currentState;            // Estado Actual
 
     // ESTADOS DE ANIMACIÓN
     const string tesoro1 = "tesoro1";
@@ -35,129 +31,29 @@ public class mimic : MonoBehaviour
     [SerializeField] private AudioClip audioTes;
     [SerializeField] private AudioClip audioMimic;
 
-    // Implementacion Maquina de estado Mimic
+    // Implementacion de IAmimic
     [SerializeField] public Transform player;
     [SerializeField] private float dist;
     public Vector3 startingPoint;
+    private Animator animator;
     private SpriteRenderer spriteRenderer;
 
     void Awake()
     {
         MimicChance();
-        //SetupStateMachine();
-
+        SetupStateMachine();
     }
+
     void Start()
     {
         animator = GetComponent<Animator>();
 
-        
-        switch (MChance)
-        {
-            case 0:
-                {
-                    switch (TSize)
-                    {
-                        case 0:
-                            {
-                                //Pequeño asi que suma 10 puntos;
-                                ScoreVar = 10;
-                                // Cambia Anim a T Small
-                                ChangeAnimationsState(tesoro1);
-
-                                break;
-                            }
-
-                        case 1:
-                            {
-                                //Pequeño asi que suma 20 puntos;
-                                ScoreVar = 20;
-                                // Cambia Anim a T Med
-                                ChangeAnimationsState(tesoro2);
-
-                                break;
-                            }
-
-                        case 2:
-                            {
-                                //Grande asi que suma 30 puntos;
-                                ScoreVar = 30;
-                                // Cambia Anim a T Big
-                                ChangeAnimationsState(tesoro3);
-
-                                break;
-                            }
-
-
-                        default:
-
-                            ChangeAnimationsState(tesoro1);
-                            ScoreVar = 10;
-
-                            break;
-                    }
-
-                    break;
-                }
-            case 1:
-                {
-                    //Aqui es un mimic
-                    ScoreVar = Random.Range(0, -30);
-                    switch (TSize)
-                    {
-                        case 0:
-
-                            // Cambia Anim a T Small
-                            ChangeAnimationsState(mimic1);
-
-                            break;
-
-                        case 1:
-
-                            // Cambia Anim a T Med
-                            ChangeAnimationsState(mimic2);
-
-                            break;
-
-                        case 2:
-
-                            // Cambia Anim a T Big
-                            ChangeAnimationsState(mimic3);
-
-                            break;
-
-
-                        default:
-
-                            ChangeAnimationsState(mimic1);
-
-                            break;
-
-                    }
-
-
-
-                    break;
-                }
-
-            default:
-                {
-                    ChangeAnimationsState(tesoro1);
-                    ScoreVar = 10;
-                    break;
-                }
-
-
-        }
-
-        /*
         switch (currentState)
         {
             case State.Tesoro:
                 {
                     switch (TSize)
                     {
-                        // Configuraciones para el tesoro
                         case 0:
                             ScoreVar = 10;
                             ChangeAnimationsState(tesoro1);
@@ -183,7 +79,6 @@ public class mimic : MonoBehaviour
 
             case State.Mimic:
                 {
-                    // Configuraciones para el mimic
                     ScoreVar = Random.Range(0, -30);
 
                     switch (TSize)
@@ -207,56 +102,38 @@ public class mimic : MonoBehaviour
                     break;
                 }
         }
-        */
-
     }
 
-    /*
-    void Update(){
+    void Update()
+    {
         switch (currentState)
         {
             case State.Tesoro:
-                // Lógica específica para el estado de tesoro (si es necesario)
+                // Lógica para el tesoro 
                 break;
 
             case State.Mimic:
-                // Lógica específica para el estado de mimic
+                // Lógica para el mimic
                 dist = Vector2.Distance(transform.position, player.position);
                 animator.SetFloat("Distancia", dist);
                 Girar(player.position);
                 break;
         }
     }
-    */
 
     void ChangeAnimationsState(string newState)
     {
-        if (currentState == newState) return;
+        if (currentState == State.Tesoro) return; // Evitar cambiar el estado si es un tesoro
 
         animator.Play(newState);
-
-        currentState = newState;  // Quitar al implemntar la maquina
     }
-
 
     private void OnTriggerEnter2D(Collider2D Collision)
     {
-
         if (Collision.gameObject.tag == "nave")
         {
             ScoreUpdate();
-            
-            if (MChance == 0)
-            {
-                ControllAudio.Instance.EjecutarSound(audioTes);
-            }
 
-            else if (MChance == 1)
-            {
-                ControllAudio.Instance.EjecutarSound(audioMimic);
-            }
-
-            /*
             if (currentState == State.Tesoro)
             {
                 ControllAudio.Instance.EjecutarSound(audioTes);
@@ -265,19 +142,15 @@ public class mimic : MonoBehaviour
             {
                 ControllAudio.Instance.EjecutarSound(audioMimic);
             }
-            */
 
             Destroy(gameObject);
         }
-
     }
 
     void ScoreUpdate()
     {
         Score.floatValue += ScoreVar;
     }
-
-
 
     void MimicChance()
     {
@@ -287,7 +160,6 @@ public class mimic : MonoBehaviour
         Debug.Log("tiro" + MChance + TSize);
     }
 
-    /*
     void SetupStateMachine()
     {
         if (MChance == 0)
@@ -311,7 +183,4 @@ public class mimic : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
-    */
 }
-
-

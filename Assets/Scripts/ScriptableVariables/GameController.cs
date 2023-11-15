@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "GameController", menuName = "GameContoller/GameController", order = 1)]
 public class GameController : ScriptableObject
 {
     [Header("Game Pause Data")]

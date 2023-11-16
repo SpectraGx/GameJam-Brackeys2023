@@ -5,6 +5,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 {
 
     [SerializeField] InputSystem inputSystem;
+    [SerializeField] GameController GM;
     Rigidbody2D rb;
     public float speed = 5f;
 
@@ -13,7 +14,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     {
         
         rb = GetComponent<Rigidbody2D>();
-        
+        GM.currentSpeed = GM.maxSpeed;
     }
 
     
@@ -37,7 +38,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         inputSystem.moveD = Input.GetKey(KeyCode.S);
         inputSystem.moveU = Input.GetKey(KeyCode.W);
 
-        rb.velocity = new Vector2(inputSystem.xMove * speed, inputSystem.yMove * speed);
+        rb.velocity = new Vector2(inputSystem.xMove * GM.currentSpeed * GM.GameTime, inputSystem.yMove * GM.currentSpeed * GM.GameTime);
     }
 
     

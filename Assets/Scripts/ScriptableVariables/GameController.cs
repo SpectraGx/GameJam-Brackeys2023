@@ -13,11 +13,16 @@ public class GameController : ScriptableObject
 
     [Header("Player Data")]
     [SerializeField] public float PlayerHP;
+    [Tooltip("Move this to change the player max Speed")]
+    [SerializeField] public float maxSpeed = 0;
+
+    [Tooltip("Do NOT move this parameter to change the speed, move the one above")]
+    [SerializeField] public float currentSpeed = 0;
 
     [Tooltip("Move this parameter to change the ammont of iFrames the playe gets")]
     [SerializeField] public float playerIFrames = 2f;
     
-    [Tooltip("Do NOT move this parameter to change the iFrmas, move the one above")]
+    [Tooltip("Do NOT move this parameter to change the iFrames, move the one above")]
     [SerializeField] public float activeIFrames = 0;
 
     [Tooltip("The position to respawn, DO NOT set it to anything")]

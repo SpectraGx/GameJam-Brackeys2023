@@ -13,6 +13,8 @@ public class GameController : ScriptableObject
 
     [Header("Player Data")]
     [SerializeField] public float PlayerHP;
+    [SerializeField] public float playerIFrames;
+    [SerializeField] public float activeIFrames;
 
     [Tooltip("The position to respawn, DO NOT set it to anything")]
     [SerializeField] public Transform respawnPoint;

@@ -38,7 +38,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         inputSystem.moveD = Input.GetKey(KeyCode.S);
         inputSystem.moveU = Input.GetKey(KeyCode.W);
 
-        rb.velocity = new Vector2(inputSystem.xMove * GM.currentSpeed * GM.GameTime, inputSystem.yMove * GM.currentSpeed * GM.GameTime);
+        rb.velocity = new Vector2(inputSystem.xMove * GM.currentSpeed * GM.GameTime * Time.deltaTime, inputSystem.yMove * GM.currentSpeed * GM.GameTime * Time.deltaTime);
     }
 
     

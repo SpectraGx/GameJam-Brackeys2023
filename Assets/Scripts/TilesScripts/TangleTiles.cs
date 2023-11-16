@@ -8,6 +8,7 @@ public class TangleTiles : MonoBehaviour
     {
         if (other.gameObject.CompareTag("nave"))
         {
+            GM.Tangled = true;
             GM.currentSpeed = 3f;
         }
     }
@@ -16,7 +17,7 @@ public class TangleTiles : MonoBehaviour
     {
         if (other.gameObject.CompareTag("nave"))
         {
-            GM.currentSpeed = GM.maxSpeed;
+            GM.Tangled = false;
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0449c086676e70248b7d7d475a31d757
+guid: 2e61f8edfd0e4df4f8510f1c21962f88
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,20 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,6 +95,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -106,43 +132,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StartScreen-Sheet_0
+      name: idle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b7ac2fb1f256a43a6832d1be76a228
-      internalID: -1044946633
+      spriteID: 73a3028d49ea0ee48ac16b264354afb6
+      internalID: -1251177077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_1
+      name: idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 149
+        x: 110
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132ce4e3a26106f489f9376f5ad22ada
-      internalID: 1851300466
+      spriteID: e0031991de156d04c8ddaf4dd889857b
+      internalID: -201496710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_2
+      name: idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 298
+        x: 220
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2718324bfeb2b444a977da09bcf8a2e2
-      internalID: -778294540
+      spriteID: b18d92ae7c8816a4aa907f0c1d202bae
+      internalID: -1769079877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_3
+      name: idle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 447
+        x: 330
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d14fbd9c2908d48a648659ed33f43f
-      internalID: 1117854162
+      spriteID: 8a520936ecda4fd4a9b7864348bf3ef7
+      internalID: -382387840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_4
+      name: idle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 596
+        x: 440
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4976e99807806c54eb20b8e16a273b03
-      internalID: -407297868
+      spriteID: b631107d9b109e74897d6400c984fc31
+      internalID: -1365573486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_5
+      name: idle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 745
+        x: 550
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671a7c78c845bba4f91431c480644c5d
-      internalID: 2059187161
+      spriteID: f0db52cf11f58cc4e83b69216022fd17
+      internalID: -1805616814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_6
+      name: idle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 894
+        x: 660
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d19cb3fabe84fe47a159d9cf3efb743
-      internalID: -369883212
+      spriteID: 40a398c062390dd4eaf5ab2886d418eb
+      internalID: 363034396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_7
+      name: idle-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1043
+        x: 770
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac7f526220086324c813dc6e0daea5a6
-      internalID: -1985511284
+      spriteID: 259047cc760abcc48a43a6612249c1d5
+      internalID: -753862033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_8
+      name: idle-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1192
+        x: 880
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f39100d936815f41b693a159da394ac
-      internalID: 53356578
+      spriteID: efa24a7a907c41f489a7ff3ba3ac2767
+      internalID: 1384912197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_9
+      name: idle-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1341
+        x: 990
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 513dd61e1ed8f244f878dba067896036
-      internalID: -387341883
+      spriteID: 3a70d1de8c70db94ab30fb6ebfa2f374
+      internalID: 445185246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_10
+      name: idle-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1490
+        x: 1100
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd64b859f0edf2e42baf3fa745fad4a3
-      internalID: -1499030958
+      spriteID: 1201eeb1ba1c31943aeb7604a1c9c8c6
+      internalID: 1952892947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartScreen-Sheet_11
+      name: idle-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1639
+        x: 1210
         y: 0
-        width: 144
-        height: 80
+        width: 110
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,113 +381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a377b6cf7440144ad32c338db5c498
-      internalID: -1240493419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartScreen-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 1788
-        y: 0
-        width: 144
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da86ce7d4f6f0c644bc9a34f6a5539cb
-      internalID: 575940335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartScreen-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 1937
-        y: 0
-        width: 144
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06471425e4a117b49b0b0111bf5ca319
-      internalID: 1738257112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartScreen-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 2086
-        y: 0
-        width: 144
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54b8f3cde9dbf094aa89606e16c2298d
-      internalID: 109109508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartScreen-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 2235
-        y: 0
-        width: 144
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 443899ee49cd42542be9b27fee755f0d
-      internalID: 1887571268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartScreen-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 2384
-        y: 0
-        width: 144
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a62d679c12e0bf94da48d3ce45373061
-      internalID: -815347050
+      spriteID: 1ef4d9dd496842640a5ac287dd98ad62
+      internalID: -1417666276
       vertices: []
       indices: 
       edges: []
@@ -503,23 +398,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StartScreen-Sheet_0: -1044946633
-      StartScreen-Sheet_1: 1851300466
-      StartScreen-Sheet_10: -1499030958
-      StartScreen-Sheet_11: -1240493419
-      StartScreen-Sheet_12: 575940335
-      StartScreen-Sheet_13: 1738257112
-      StartScreen-Sheet_14: 109109508
-      StartScreen-Sheet_15: 1887571268
-      StartScreen-Sheet_16: -815347050
-      StartScreen-Sheet_2: -778294540
-      StartScreen-Sheet_3: 1117854162
-      StartScreen-Sheet_4: -407297868
-      StartScreen-Sheet_5: 2059187161
-      StartScreen-Sheet_6: -369883212
-      StartScreen-Sheet_7: -1985511284
-      StartScreen-Sheet_8: 53356578
-      StartScreen-Sheet_9: -387341883
+      idle-Sheet_0: -1251177077
+      idle-Sheet_1: -201496710
+      idle-Sheet_10: 1952892947
+      idle-Sheet_11: -1417666276
+      idle-Sheet_2: -1769079877
+      idle-Sheet_3: -382387840
+      idle-Sheet_4: -1365573486
+      idle-Sheet_5: -1805616814
+      idle-Sheet_6: 363034396
+      idle-Sheet_7: -753862033
+      idle-Sheet_8: 1384912197
+      idle-Sheet_9: 445185246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

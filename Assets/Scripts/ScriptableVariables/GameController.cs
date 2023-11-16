@@ -19,6 +19,9 @@ public class GameController : ScriptableObject
     [Tooltip("Do NOT move this parameter to change the speed, move the one above")]
     [SerializeField] public float currentSpeed = 0;
 
+    [Tooltip("Check If Player is inside the seaweeds")]
+    [SerializeField] public bool Tangled;
+
     [Tooltip("Move this parameter to change the ammont of iFrames the playe gets")]
     [SerializeField] public float playerIFrames = 2f;
     

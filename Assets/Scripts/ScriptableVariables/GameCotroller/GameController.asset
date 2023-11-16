@@ -17,10 +17,11 @@ MonoBehaviour:
   PlayerHP: 3
   maxSpeed: 5
   currentSpeed: 5
+  Tangled: 0
   playerIFrames: 2
-  activeIFrames: -26.97715
+  activeIFrames: -16.178299
   respawnPoint: {fileID: 0}
   KeysAmount: 0
   KeysObtained: 0
-  gameScore: 20
+  gameScore: 60
   gameHighScore: 0

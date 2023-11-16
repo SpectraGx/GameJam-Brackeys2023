@@ -7,7 +7,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     [SerializeField] InputSystem inputSystem;
     [SerializeField] GameController GM;
     Rigidbody2D rb;
-    public float speed = 5f;
+    public float recoverySpeed = 0.5f;
 
 
     void Awake()
@@ -21,6 +21,15 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
     void Update()
     {
+        if((GM.currentSpeed < GM.maxSpeed) && !GM.Tangled)
+        {
+            GM.currentSpeed += recoverySpeed * Time.deltaTime * GM.GameTime;
+        }
+        else if(GM.currentSpeed > GM.maxSpeed)
+        {
+            GM.currentSpeed = GM.maxSpeed;
+        }
+
         Inputs();
         
 

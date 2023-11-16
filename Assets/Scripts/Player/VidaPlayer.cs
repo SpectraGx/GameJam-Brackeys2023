@@ -9,15 +9,15 @@ public class VidaPlayer : MonoBehaviour
     private string currentState;
 
     // Anim States
-    [SerializeField]const string Player_Idle = "FullHPPlayerIdle";
-    [SerializeField]const string Player_Idle2 = "2HPPlayerIdle";
-    [SerializeField]const string Player_Idle3 = "LastHPPlayerIdle";
-    [SerializeField]const string Player_Death = "PlayerDeath";
+    [SerializeField]const string Player_Idle = "PlayerFullHP";
+    [SerializeField]const string Player_Idle2 = "Player2HP";
+    [SerializeField]const string Player_Idle3 = "Player1HP";
+    [SerializeField]const string Player_Death = "DeathPlayer";
 
     void Awake()
     {
         animator = GetComponent<Animator>();
-        animator.Play("FullHPPlayerIdle");
+        animator.Play("PlayerFullHP");
     }
 
 

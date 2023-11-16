@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Carga logo_0
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 48
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b776af60bd81c7459af18f73045c196
+      internalID: -1923616674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 48
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e47f1e539dfea46a146f9bee42141d
+      internalID: -1206153328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 50
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023785a4ed6f0804e9b0e6318bd8b0d7
+      internalID: 1033221920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_3
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 50
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9726dcadc7497984fa48be2c7896a4e3
+      internalID: -433254491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 50
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78c6404f9514334b8eeb908b0387662
+      internalID: 1649646215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_5
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 50
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b779b68c8146642a4f8fa3ef3a1208
+      internalID: -812019295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_6
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 50
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614372361664c494a89a32558c56f100
+      internalID: 266477933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_7
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 50
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcf605620fa21e4aa1f4413525b5dfb
+      internalID: 1160123165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_8
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 50
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2242bf3f4fd664e931cbe5eeb94282
+      internalID: -591235523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_9
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 50
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8846e72c88a93f4db650b6488bbd731
+      internalID: 2064463578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_10
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 50
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a796d1c38c122a429e644b75d6de00b
+      internalID: -871278676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_11
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 50
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1ea2e8860e7a745b61b7ae6dba39fd
+      internalID: 1541115506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_12
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f845147ecd543b941904e58c3f6b3dc7
+      internalID: 587287401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_13
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c42c4dbcea2dc499e58323c34dc6da
+      internalID: -131204824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_14
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99bf0181088d0d43b92b03a7fac65ce
+      internalID: -437356922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_15
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f047e7ca9124e548bffecf14757b8b6
+      internalID: -1170728033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_16
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af2f407bf098e04a8bc4a7993a321fb
+      internalID: -768685466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_17
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 50
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7d2353f77984c4681636f61a4c8f47
+      internalID: 387157925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_18
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 50
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d049c64b579feff479b5905f34ff3b63
+      internalID: -1758755780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_19
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 50
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26df6bd4fb01063458fdb5c203f33ddf
+      internalID: -1571098748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_20
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 50
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fd9e60cc2074d478e904f6e1aacc7b
+      internalID: -1059508596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_21
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 50
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ee124ae717c424b89f3a736c184f46
+      internalID: -1092404029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_22
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 50
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca45c15de125e74a953b5fcf8dda94a
+      internalID: 2009060085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_23
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 50
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3e7df72f936eb44a22ac5b2e2f593d
+      internalID: -1566970208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_24
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 50
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff67e04c07a69514a8267cd4a4a77b32
+      internalID: 1403543683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_25
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 50
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3293da0eb1cb41b48b9c9f444081b7fa
+      internalID: 548390656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_26
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 50
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ca6dafb85f58943bd21c3606051837
+      internalID: -600333586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_27
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 50
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cd0d361e80ffd49bd088f9a3042ef3
+      internalID: 2112244728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_28
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 50
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2044512a5a68e4cb156287bca380d8
+      internalID: -244928410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carga logo_29
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 50
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16537a759a8453d4fa06d6ef5a3baf31
+      internalID: -138722118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +749,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carga logo_0: -1923616674
+      Carga logo_1: -1206153328
+      Carga logo_10: -871278676
+      Carga logo_11: 1541115506
+      Carga logo_12: 587287401
+      Carga logo_13: -131204824
+      Carga logo_14: -437356922
+      Carga logo_15: -1170728033
+      Carga logo_16: -768685466
+      Carga logo_17: 387157925
+      Carga logo_18: -1758755780
+      Carga logo_19: -1571098748
+      Carga logo_2: 1033221920
+      Carga logo_20: -1059508596
+      Carga logo_21: -1092404029
+      Carga logo_22: 2009060085
+      Carga logo_23: -1566970208
+      Carga logo_24: 1403543683
+      Carga logo_25: 548390656
+      Carga logo_26: -600333586
+      Carga logo_27: 2112244728
+      Carga logo_28: -244928410
+      Carga logo_29: -138722118
+      Carga logo_3: -433254491
+      Carga logo_4: 1649646215
+      Carga logo_5: -812019295
+      Carga logo_6: 266477933
+      Carga logo_7: 1160123165
+      Carga logo_8: -591235523
+      Carga logo_9: 2064463578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

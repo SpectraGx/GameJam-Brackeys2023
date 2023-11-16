@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 7b535368060f7814b9f5c3607b88dde1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff72a6c91c3e24da159b6c590c0dcf
+      internalID: 293551917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e64e467cecaef644a2526cdb612e4bd
+      internalID: -1210593651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b769622ccb8e4544a8b945dbf16e72a2
+      internalID: 1129331414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4000d01d76740dc42a98ee871998ef17
+      internalID: -1833263872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749aa25c0364432428581ed2814b2e13
+      internalID: -178624559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d08686e7282444daee24f0e0de4006
+      internalID: 621946475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877a0492043efdd4da4d768dc0c06c46
+      internalID: -55912355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f85ae6a1cd8a547ba6d50f340c25ff
+      internalID: -255162848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c2ffc945d0bb4429f3ba8d50344b1e
+      internalID: -880180948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18666fb60f38494c96c3f95bcde78f0
+      internalID: -453148446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04461446ca4f4cc4d86d4647290ff8c4
+      internalID: 1525479855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974261b009475864fa871038cd239cec
+      internalID: -129337126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d7be2f076f2774a8c1cf5827d701ee
+      internalID: -630813993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6d612bf6dcd0145a95d2cdd45b02eb
+      internalID: -1602133574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f361408d1525034190d6dc5663a5077
+      internalID: 1503797871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f01b82c8eb1f3946a32c0cabb346d4a
+      internalID: 1340696892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d5ae54e55182042862fff5fdd5423d
+      internalID: -318121330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20291bb1a2250544d97a6533a28f6eb7
+      internalID: -567150173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f57d785d19be224bb64578bdb27d6c0
+      internalID: 940470189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf2565b79cd3bf4995049ad2c126789
+      internalID: 1729852825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd77b98aa3a897145aa32aeb66345cd2
+      internalID: 572738834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b531daefea9e93488336bdccfa3f93e
+      internalID: 1435905005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8ee876eb30cc9479fe7bcef48d7f7f
+      internalID: 565790382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3170
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55087d1ad2c0b5f419aa5a2c37018c93
+      internalID: -1651898550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3309
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52db4711c9487246bd941e9912e0d32
+      internalID: -2014079435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ffd0a684d86064b92d596d130e1795
+      internalID: -1503073432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9426cc631f0f10e4dad7b8bab94d8867
+      internalID: -976833122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93d6bb3a28bdbe43a99b6675dbe1721
+      internalID: -1638954625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3863
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f0a8f92a5e847499e15bf51cf02e3b
+      internalID: 1453938600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eee360c52b3cb947bf35e8b532d0462
+      internalID: 2054081554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 4138
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f6fed93665f9b4ea97ce1703e698d6
+      internalID: -791839924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 4274
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e18a0f426a90844a3198b17fff3f11
+      internalID: -863789784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4413
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae59c638679ffe4aaaab520100a4d56
+      internalID: 309950298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4552
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fef41ec37df794db2605ec07b92fa0
+      internalID: -567574161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4689
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15799cabae8111c4fb688daa09a049bd
+      internalID: -129061836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 4828
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891c9a51a41a6f146898df846ba0a2b6
+      internalID: -705861654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4967
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0833ab2b69678446bb0d2b59e1ad241
+      internalID: -1013413867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 5103
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01dae41a4a558b49a34312b4d531b58
+      internalID: -1830120100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 5242
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc46a504d8456a64da4adb9f1b1e34f6
+      internalID: 657853114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 5378
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c6cf731f1049347a315b846c7bb44c
+      internalID: 843030117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 5517
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17f94fdec356a04c86ef74cb91984e3
+      internalID: 2089208454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 5656
+        y: 0
+        width: 134
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2734b4333ca0004a909283e3666134d
+      internalID: -737396885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 5793
+        y: 0
+        width: 133
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e6d8cdce936ac4790d6e118e9198b4
+      internalID: -591278432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo Menu-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 5932
+        y: 0
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bc29405ffdd724186a64b4107283a8
+      internalID: 1361437217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fondo Menu-Sheet_0: 293551917
+      Fondo Menu-Sheet_1: -1210593651
+      Fondo Menu-Sheet_10: 1525479855
+      Fondo Menu-Sheet_11: -129337126
+      Fondo Menu-Sheet_12: -630813993
+      Fondo Menu-Sheet_13: -1602133574
+      Fondo Menu-Sheet_14: 1503797871
+      Fondo Menu-Sheet_15: 1340696892
+      Fondo Menu-Sheet_16: -318121330
+      Fondo Menu-Sheet_17: -567150173
+      Fondo Menu-Sheet_18: 940470189
+      Fondo Menu-Sheet_19: 1729852825
+      Fondo Menu-Sheet_2: 1129331414
+      Fondo Menu-Sheet_20: 572738834
+      Fondo Menu-Sheet_21: 1435905005
+      Fondo Menu-Sheet_22: 565790382
+      Fondo Menu-Sheet_23: -1651898550
+      Fondo Menu-Sheet_24: -2014079435
+      Fondo Menu-Sheet_25: -1503073432
+      Fondo Menu-Sheet_26: -976833122
+      Fondo Menu-Sheet_27: -1638954625
+      Fondo Menu-Sheet_28: 1453938600
+      Fondo Menu-Sheet_29: 2054081554
+      Fondo Menu-Sheet_3: -1833263872
+      Fondo Menu-Sheet_30: -791839924
+      Fondo Menu-Sheet_31: -863789784
+      Fondo Menu-Sheet_32: 309950298
+      Fondo Menu-Sheet_33: -567574161
+      Fondo Menu-Sheet_34: -129061836
+      Fondo Menu-Sheet_35: -705861654
+      Fondo Menu-Sheet_36: -1013413867
+      Fondo Menu-Sheet_37: -1830120100
+      Fondo Menu-Sheet_38: 657853114
+      Fondo Menu-Sheet_39: 843030117
+      Fondo Menu-Sheet_4: -178624559
+      Fondo Menu-Sheet_40: 2089208454
+      Fondo Menu-Sheet_41: -737396885
+      Fondo Menu-Sheet_42: -591278432
+      Fondo Menu-Sheet_43: 1361437217
+      Fondo Menu-Sheet_5: 621946475
+      Fondo Menu-Sheet_6: -55912355
+      Fondo Menu-Sheet_7: -255162848
+      Fondo Menu-Sheet_8: -880180948
+      Fondo Menu-Sheet_9: -453148446
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

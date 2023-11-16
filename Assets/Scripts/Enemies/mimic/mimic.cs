@@ -6,15 +6,6 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class mimic : MonoBehaviour
 {
-    /*
-    private enum State{
-        Tesoro,
-        Mimic
-    }
-
-    private State currentState;
-    */
-
     Animator animator;
     private string currentState;            // Estado Actual
 
@@ -44,7 +35,6 @@ public class mimic : MonoBehaviour
     void Awake()
     {
         MimicChance();
-        //SetupStateMachine();
 
     }
     void Start()
@@ -149,85 +139,7 @@ public class mimic : MonoBehaviour
 
 
         }
-
-        /*
-        switch (currentState)
-        {
-            case State.Tesoro:
-                {
-                    switch (TSize)
-                    {
-                        // Configuraciones para el tesoro
-                        case 0:
-                            ScoreVar = 10;
-                            ChangeAnimationsState(tesoro1);
-                            break;
-
-                        case 1:
-                            ScoreVar = 20;
-                            ChangeAnimationsState(tesoro2);
-                            break;
-
-                        case 2:
-                            ScoreVar = 30;
-                            ChangeAnimationsState(tesoro3);
-                            break;
-
-                        default:
-                            ChangeAnimationsState(tesoro1);
-                            ScoreVar = 10;
-                            break;
-                    }
-                    break;
-                }
-
-            case State.Mimic:
-                {
-                    // Configuraciones para el mimic
-                    ScoreVar = Random.Range(0, -30);
-
-                    switch (TSize)
-                    {
-                        case 0:
-                            ChangeAnimationsState(mimic1);
-                            break;
-
-                        case 1:
-                            ChangeAnimationsState(mimic2);
-                            break;
-
-                        case 2:
-                            ChangeAnimationsState(mimic3);
-                            break;
-
-                        default:
-                            ChangeAnimationsState(mimic1);
-                            break;
-                    }
-                    break;
-                }
-        }
-        */
-
     }
-
-    /*
-    void Update(){
-        switch (currentState)
-        {
-            case State.Tesoro:
-                // Lógica específica para el estado de tesoro (si es necesario)
-                break;
-
-            case State.Mimic:
-                // Lógica específica para el estado de mimic
-                dist = Vector2.Distance(transform.position, player.position);
-                animator.SetFloat("Distancia", dist);
-                Girar(player.position);
-                break;
-        }
-    }
-    */
 
     void ChangeAnimationsState(string newState)
     {
@@ -235,7 +147,7 @@ public class mimic : MonoBehaviour
 
         animator.Play(newState);
 
-        currentState = newState;  // Quitar al implemntar la maquina
+        currentState = newState;  
     }
 
 
@@ -255,18 +167,6 @@ public class mimic : MonoBehaviour
             {
                 ControllAudio.Instance.EjecutarSound(audioMimic);
             }
-
-            /*
-            if (currentState == State.Tesoro)
-            {
-                ControllAudio.Instance.EjecutarSound(audioTes);
-            }
-            else if (currentState == State.Mimic)
-            {
-                ControllAudio.Instance.EjecutarSound(audioMimic);
-            }
-            */
-
             Destroy(gameObject);
         }
 
@@ -277,8 +177,6 @@ public class mimic : MonoBehaviour
         Score.floatValue += ScoreVar;
     }
 
-
-
     void MimicChance()
     {
         if (MimicAllow <= 0 || MimicAllow >= 3) MimicAllow = 2;
@@ -286,32 +184,6 @@ public class mimic : MonoBehaviour
         TSize = Random.Range(0, 3);
         Debug.Log("tiro" + MChance + TSize);
     }
-
-    /*
-    void SetupStateMachine()
-    {
-        if (MChance == 0)
-        {
-            currentState = State.Tesoro;
-        }
-        else if (MChance == 1)
-        {
-            currentState = State.Mimic;
-        }
-    }
-
-    void Girar(Vector3 objetivo)
-    {
-        if (transform.position.x < objetivo.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
-    }
-    */
 }
 
 

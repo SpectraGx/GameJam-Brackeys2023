@@ -6,11 +6,11 @@ public class MimicComeBackBehaviour : StateMachineBehaviour
 {
     [SerializeField] private float speed;
     private Vector3 startPoint;
-    private IAmimic mimic;
+    private MimicMachineState mimic;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        mimic = animator.gameObject.GetComponent<IAmimic>();
+        mimic = animator.gameObject.GetComponent<MimicMachineState>();
         startPoint = mimic.startingPoint;
     }
 
@@ -19,7 +19,7 @@ public class MimicComeBackBehaviour : StateMachineBehaviour
         animator.transform.position = Vector2.MoveTowards(animator.transform.position, startPoint, speed*Time.deltaTime);
         mimic.Girar(startPoint);
         if (animator.transform.position == startPoint){
-            animator.SetTrigger("Regreso");
+            animator.SetTrigger("Llego");
         }
     }
 }

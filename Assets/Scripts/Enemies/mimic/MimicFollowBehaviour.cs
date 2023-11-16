@@ -8,13 +8,13 @@ public class MimicFollowBehaviour : StateMachineBehaviour
     [SerializeField] private float timeBase;
     private float timeFollow;
     private Transform player;
-    private IAmimic mimic;
+    private MimicMachineState mimic;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timeFollow = timeBase;
         player = GameObject.FindGameObjectWithTag("nave").GetComponent<Transform>();
-        mimic = animator.gameObject.GetComponent<IAmimic>();
+        mimic = animator.gameObject.GetComponent<MimicMachineState>();
     }
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

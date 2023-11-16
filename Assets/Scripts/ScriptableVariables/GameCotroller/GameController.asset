@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameTime: 1
   isGamePaused: 0
-  PlayerHP: 3
+  PlayerHP: 2
   playerIFrames: 2
-  activeIFrames: -3.09754
+  activeIFrames: -14.533637
   respawnPoint: {fileID: 0}
   KeysAmount: 0
   KeysObtained: 0

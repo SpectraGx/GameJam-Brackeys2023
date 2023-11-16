@@ -15,6 +15,8 @@ public class MimicMachineState : MonoBehaviour
     const string mimic1 = "Mimic";
 
     public int MChance;             // Probabilidad de Mimic
+
+    private int mimicCount;
     public float ScoreVar;
     public FloatVariable Score;
 
@@ -23,24 +25,16 @@ public class MimicMachineState : MonoBehaviour
     [SerializeField] private AudioClip audioTes;
     [SerializeField] private AudioClip audioMimic;
 
-    // Implementacion Maquina de estado Mimic
+    //          MAQUINA DE ESTADO           //
     [SerializeField] public Transform player;
     [SerializeField] private float dist;
     public Vector3 startingPoint;
     private SpriteRenderer spriteRenderer;
 
+    //          GM          //
+    [SerializeField] GameController GM;
 
-    //          DIALOGO         //
-    [SerializeField] private GameObject dialogueMark;
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text dialogueText;
-    [SerializeField, TextArea(4, 5)] private string[] dialogueLines;
-
-    private float typingTime = 0.05f;
-
-    private bool isPlayerInRange;
-    private bool didDialogueStart;
-    private int lineIndex;
+    public BoxCollider2D BoxColl;
 
 
     void Awake()
@@ -53,19 +47,17 @@ public class MimicMachineState : MonoBehaviour
         animator = GetComponent<Animator>();
         startingPoint = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        ColliderFirst();
 
         switch (MChance)
         {
             case 0:
                 {
-                    ScoreVar = 10;
                     ChangeAnimationsState(tesoro1);
                     break;
                 }
             case 1:
                 {
-                    ScoreVar = Random.Range(0, -30);
-                    // Cambia Anim a T Small
                     ChangeAnimationsState(mimic1);
                     break;
                 }
@@ -73,20 +65,15 @@ public class MimicMachineState : MonoBehaviour
             default:
                 {
                     ChangeAnimationsState(tesoro1);
-                    ScoreVar = 10;
                     break;
                 }
-
-
         }
     }
 
     void ChangeAnimationsState(string newState)
     {
         if (currentState == newState) return;
-
         animator.Play(newState);
-
         currentState = newState;
     }
 
@@ -97,33 +84,24 @@ public class MimicMachineState : MonoBehaviour
         {
             if (Collision.gameObject.CompareTag("nave"))
             {
-                isPlayerInRange = true;
-                dialogueMark.SetActive(true);
-                Debug.Log("Se puede activar dialogo");
-            }
-        }
-
-        if (Collision.gameObject.tag == "nave")
-        {
-            ScoreUpdate();
-
-            if (MChance == 0)
-            {
+                GM.gameScore += 10;
                 ControllAudio.Instance.EjecutarSound(audioTes);
+                Destroy(gameObject);
             }
-
-            else if (MChance == 1)
-            {
-                ControllAudio.Instance.EjecutarSound(audioMimic);
-            }
-            Destroy(gameObject);
         }
 
-    }
 
-    void ScoreUpdate()
-    {
-        Score.floatValue += ScoreVar;
+        if (MChance == 1)
+        {
+            if (Collision.gameObject.tag == "nave")
+            {
+                GM.PlayerHP--;
+                GM.activeIFrames = GM.playerIFrames;
+                ControllAudio.Instance.EjecutarSound(audioMimic);
+                Destroy(gameObject);
+            }
+        }
+
     }
 
     void MimicChance()
@@ -135,29 +113,6 @@ public class MimicMachineState : MonoBehaviour
 
     private void Update()
     {
-        if (MChance == 0)
-        {
-            if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
-            {
-
-                if (!didDialogueStart)
-                {
-                    StartDialogue();
-                }
-                else if (dialogueText.text == dialogueLines[lineIndex])
-                {
-                    NextDialogueLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    dialogueText.text = dialogueLines[lineIndex];
-                }
-            }
-        }
-
-
-
         if (MChance == 1)
         {
             dist = Vector2.Distance(transform.position, player.position);
@@ -178,56 +133,16 @@ public class MimicMachineState : MonoBehaviour
         }
     }
 
-
-    //          METODOS DIALOGO         //
-    private void StartDialogue()
+    public void Collider2()
     {
-        didDialogueStart = true;
-        dialoguePanel.SetActive(true);
-        dialogueMark.SetActive(false);
-        lineIndex = 0;
-        Time.timeScale = 0f;
-        StartCoroutine(ShowLine());
+        BoxColl.size = new Vector2(1f, 1f);
+        BoxColl.offset = new Vector2(0.0f, 0.5f);
     }
 
-    private void NextDialogueLine()
+    public void ColliderFirst()
     {
-        lineIndex++;
-        if (lineIndex < dialogueLines.Length)
-        {
-            StartCoroutine(ShowLine());
-        }
-        else
-        {
-            didDialogueStart = false;
-            dialoguePanel.SetActive(false);
-            dialogueMark.SetActive(true);
-            Time.timeScale = 1f;
-        }
-    }
-
-    private IEnumerator ShowLine()
-    {
-        dialogueText.text = string.Empty;
-
-        foreach (char ch in dialogueLines[lineIndex])
-        {
-            dialogueText.text += ch;
-            yield return new WaitForSecondsRealtime(typingTime);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (MChance == 0)
-        {
-            if (other.gameObject.CompareTag("nave"))
-            {
-                isPlayerInRange = false;
-                dialogueMark.SetActive(false);
-                Debug.Log("No se puede activar dialogo");
-            }
-        }
+        BoxColl.size = new Vector2(2.2f, 1.7f);
+        BoxColl.offset = new Vector2(0.0f, -0.3f);
     }
 
 }

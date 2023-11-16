@@ -18,9 +18,9 @@ MonoBehaviour:
   maxSpeed: 5
   currentSpeed: 5
   playerIFrames: 2
-  activeIFrames: -13.366983
+  activeIFrames: -26.97715
   respawnPoint: {fileID: 0}
   KeysAmount: 0
   KeysObtained: 0
-  gameScore: 0
+  gameScore: 20
   gameHighScore: 0

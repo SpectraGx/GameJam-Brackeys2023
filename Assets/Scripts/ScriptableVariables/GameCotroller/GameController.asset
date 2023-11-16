@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameTime: 1
   isGamePaused: 0
-  PlayerHP: 3
+  PlayerHP: 1
   maxSpeed: 5
   currentSpeed: 5
   Tangled: 0
   playerIFrames: 2
-  activeIFrames: -16.178299
+  activeIFrames: -37.055756
   respawnPoint: {fileID: 0}
   KeysAmount: 0
   KeysObtained: 0
-  gameScore: 60
+  gameScore: 150
   gameHighScore: 0

@@ -4,6 +4,8 @@ public class TriggerBoss : MonoBehaviour
 {
     [SerializeField] GameController GM;
 
+    [SerializeField] Transform BossSpawn;
+    [SerializeField] Transform[] bossParts;
     Animator animator;
     AudioSource monsterSource;
     private string currentState;
@@ -32,7 +34,7 @@ public class TriggerBoss : MonoBehaviour
 
     void Start()
     {
-        animator.Play("BaitBoss");
+        animator.Play("BossSleeps");
     }
 
 
@@ -58,6 +60,9 @@ public class TriggerBoss : MonoBehaviour
 
     public void RestartBoss()
     {
-        
+        for(int i = 0; i < bossParts.Length; i++)
+        {
+            bossParts[i].transform.position = BossSpawn.transform.position;
+        }
     }
 }

@@ -8,6 +8,5 @@ public class Keys : MonoBehaviour
     private MovimientoOchoDirecciones pj;
     private void OnTriggerEnter2D(Collider2D other) {
         gm.KeysObtained++;
-        Destroy(gameObject);
     }
 }

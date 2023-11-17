@@ -29,10 +29,12 @@ public class Dialogue : MonoBehaviour
                 StartDialogue();
 
             }
-            else if (dialogueText.text == dialogueLines[lineIndex]){
+            else if (dialogueText.text == dialogueLines[lineIndex])
+            {
                 NextDialogueLine();
             }
-            else {
+            else
+            {
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
             }
@@ -45,27 +47,34 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
         lineIndex = 0;
-        Time.timeScale=0f;
+        Time.timeScale = 0f;
         StartCoroutine(ShowLine());
     }
 
-    private void NextDialogueLine(){
+    private void NextDialogueLine()
+    {
         lineIndex++;
-        if  (lineIndex < dialogueLines.Length){
+        if (lineIndex < dialogueLines.Length)
+        {
             StartCoroutine(ShowLine());
         }
-        else {
+        else
+        {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
-            Time.timeScale=1f;
+            Time.timeScale = 1f;
+            Destroy(gameObject);
+
         }
     }
 
-    private IEnumerator ShowLine(){
+    private IEnumerator ShowLine()
+    {
         dialogueText.text = string.Empty;
 
-        foreach(char ch in dialogueLines[lineIndex]){
+        foreach (char ch in dialogueLines[lineIndex])
+        {
             dialogueText.text += ch;
             yield return new WaitForSecondsRealtime(typingTime);
         }

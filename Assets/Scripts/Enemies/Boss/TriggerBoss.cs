@@ -10,6 +10,7 @@ public class TriggerBoss : MonoBehaviour
     [SerializeField] Boss boss;
     Animator animator;
     AudioSource monsterSource;
+    [SerializeField] AudioClip monsterScream;
     private string currentState;
 
     //estados de animacion
@@ -52,17 +53,19 @@ public class TriggerBoss : MonoBehaviour
 
     public void PlayAudio()
     {
-        monsterSource?.Play();
+        ControllAudio.Instance.EjecutarSound(monsterScream);
     }
 
     public void StartChase()
     {
         GM.isBossActive = true;
+        monsterSource.Play();
     }
 
     public void RestartBoss()
     {
         ChangeAnimationsState(M_Sleep);
+        monsterSource.Stop();
         boss.isColliding = false;
         for(int i = 0; i < bossParts.Length; i++)
         {

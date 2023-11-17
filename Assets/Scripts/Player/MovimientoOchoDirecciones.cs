@@ -11,10 +11,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     public float recoverySpeed = 0.5f;
     private Vector3 respawnPoint;
 
-    // VARIABLES DE AUDIO
-    [SerializeField] private AudioClip music1;
-    [SerializeField] private AudioClip music2;
-    [SerializeField] private AudioClip music3;
+
 
 
     void Awake()
@@ -68,35 +65,9 @@ public class MovimientoOchoDirecciones : MonoBehaviour
             respawnPoint = transform.position;
         }
 
-        // ENTRA MUSCIA
-
-        if (other.tag == "zona1" && !GM.isBossActive){
-            ControllAudio.Instance.EjecutarSound(music1);
-        }
-
-        if (other.tag == "zona2" && !GM.isBossActive){
-            ControllAudio.Instance.EjecutarSound(music2);
-        }
-
-        if (other.tag == "zona3" && !GM.isBossActive){
-            ControllAudio.Instance.EjecutarSound(music3);
-        }
     }
 
-    // SALIR MUSICA
-    private void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "zona1" && !GM.isBossActive){
-            ControllAudio.Instance.PauseMusic();
-        }
 
-        if (other.tag == "zona2" && !GM.isBossActive){
-            ControllAudio.Instance.PauseMusic();
-        }
-
-        if (other.tag == "zona3" && !GM.isBossActive){
-            ControllAudio.Instance.PauseMusic();
-        }
-    }
 
 }
 

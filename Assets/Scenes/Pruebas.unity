@@ -1293,6 +1293,7 @@ MonoBehaviour:
   pj: {fileID: 1258940833}
   moveSpeed: 3
   audioDamage: {fileID: 8300000, guid: 34c244b59738c3c4c89397d3b59b2cc0, type: 3}
+  music: {fileID: 0}
   scShakeIntensity: 10
   scShakeDuration: 0.2
   parts:
@@ -2006,6 +2007,9 @@ MonoBehaviour:
   inputSystem: {fileID: 11400000, guid: 1e6843d73815ef943bb09f33995cd7c6, type: 2}
   GM: {fileID: 11400000, guid: 0d9d22703e737d94da44cd711f06c941, type: 2}
   recoverySpeed: 0.5
+  music1: {fileID: 0}
+  music2: {fileID: 0}
+  music3: {fileID: 0}
 --- !u!50 &1258940835
 Rigidbody2D:
   serializedVersion: 4
@@ -2351,6 +2355,9 @@ MonoBehaviour:
   inputSystem: {fileID: 0}
   GM: {fileID: 0}
   recoverySpeed: 0.5
+  music1: {fileID: 0}
+  music2: {fileID: 0}
+  music3: {fileID: 0}
 --- !u!212 &1558105315
 SpriteRenderer:
   m_ObjectHideFlags: 0

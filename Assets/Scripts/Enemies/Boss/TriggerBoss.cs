@@ -6,6 +6,8 @@ public class TriggerBoss : MonoBehaviour
 
     [SerializeField] Transform BossSpawn;
     [SerializeField] Transform[] bossParts;
+
+    [SerializeField] Boss boss;
     Animator animator;
     AudioSource monsterSource;
     private string currentState;
@@ -60,6 +62,8 @@ public class TriggerBoss : MonoBehaviour
 
     public void RestartBoss()
     {
+        ChangeAnimationsState(M_Sleep);
+        boss.isColliding = false;
         for(int i = 0; i < bossParts.Length; i++)
         {
             bossParts[i].transform.position = BossSpawn.transform.position;

@@ -16,7 +16,7 @@ public class Boss : MonoBehaviour
     [SerializeField] Transform[] parts;
 
 
-    [SerializeField] bool isColliding = false;
+    [SerializeField] public bool isColliding = false;
 
     public GameController GM;
 
@@ -62,13 +62,13 @@ public class Boss : MonoBehaviour
 
     void MovePlayer()
     {
-        if(GM.activeIFrames < 0)
+        if(GM.activeIFrames > 0)
         {
-            transform.position = Vector2.MoveTowards(transform.position, pj.position, Time.deltaTime * moveSpeed * GM.GameTime);
+            transform.position = Vector2.MoveTowards(transform.position, pj.position, Time.deltaTime * (moveSpeed/2) * GM.GameTime);
         }
         else
         {
-            return;
+            transform.position = Vector2.MoveTowards(transform.position, pj.position, Time.deltaTime * moveSpeed * GM.GameTime);
         }
     }
 

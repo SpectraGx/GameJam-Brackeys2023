@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinTrigger : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class WinTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("nave") && GM.isBossActive)
         {
-            //Pon aqui el cambio de escena.
+            SceneManager.LoadScene("NewWinScene");
         }
     }
 }

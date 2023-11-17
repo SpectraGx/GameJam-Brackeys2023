@@ -21,7 +21,7 @@ public class MenuInicial : MonoBehaviour
     }
 
     public void Back(){
-        Debug.Log("Regrese puta");
+        Debug.Log("Regrese tilin");
         SceneManager.LoadScene("MainMenu");
     }
 

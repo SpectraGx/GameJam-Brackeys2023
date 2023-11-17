@@ -38,5 +38,6 @@ public class GameController : ScriptableObject
     [SerializeField] public float KeysObtained;
     [SerializeField] public float gameScore;
     [SerializeField] public float gameHighScore;
+    [SerializeField] public bool isBossActive;
 
 }

@@ -15,26 +15,49 @@ public class Boss : MonoBehaviour
 
     [SerializeField] Transform[] parts;
 
+
+    [SerializeField] bool isColliding = false;
+
     public GameController GM;
+
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("nave"))
+        if (other.gameObject.CompareTag("nave") && GM.isBossActive)
         {
-            GM.PlayerHP--;
-            GM.activeIFrames = GM.playerIFrames;
-            ControllAudio.Instance.EjecutarSound(audioDamage);
-            ScreenShakeV2.Instance.ShakeCamera(scShakeIntensity, scShakeDuration);
+            isColliding = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("nave") && GM.isBossActive)
+        {
+            isColliding = false;
         }
     }
 
+
     private void Update()
     {
-        MovePlayer();
-        LookAtPlayer();
-        if(parts != null)
+        if(GM.isBossActive)
         {
-            MoveParts();
+            MovePlayer();
+            LookAtPlayer();
+            if(parts != null)
+            {
+                MoveParts();
+            }
+
+            if(GM.activeIFrames < 0 && isColliding)
+            {
+                GM.PlayerHP--;
+                GM.activeIFrames = GM.playerIFrames;
+                ControllAudio.Instance.EjecutarSound(audioDamage);
+                ScreenShakeV2.Instance.ShakeCamera(scShakeIntensity, scShakeDuration);
+            }
         }
+
     }
 
     void MovePlayer()

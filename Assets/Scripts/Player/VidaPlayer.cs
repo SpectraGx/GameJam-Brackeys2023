@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class VidaPlayer : MonoBehaviour
 {
@@ -9,6 +7,8 @@ public class VidaPlayer : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator animator;
     private string currentState;
+
+    [SerializeField] float ShakeForce;
 
     // Anim States
     [SerializeField] const string Player_Idle = "PlayerFullHP";
@@ -37,6 +37,7 @@ public class VidaPlayer : MonoBehaviour
 
     void Update()
     {
+
         switch (GM.PlayerHP)
         {
             case 3:
@@ -94,9 +95,9 @@ public class VidaPlayer : MonoBehaviour
     }
 
 
-    void OnDeath()
+    public void OnDeath()
     {
-        SceneManager.LoadScene("Death");
-        PlayerPrefs.SetFloat("Hi-Score", GM.gameScore);
+        GM.isBossActive = false;
+        //insert here respawn logic
     }
 }

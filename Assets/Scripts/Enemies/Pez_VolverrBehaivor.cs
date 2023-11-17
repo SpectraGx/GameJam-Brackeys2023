@@ -1,30 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Pez_VolverrBehaivor : StateMachineBehaviour
 {
-
+    [SerializeField] GameController GM;
     [SerializeField] private float velocidadMovimiento;
 
     private Vector3 puntoInicial;
 
-    private EnemyTracking Anglerfish;
+    private Patrulla Fish;
+    private EnemyTracking FishTrack;
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Anglerfish = animator.gameObject.GetComponent<EnemyTracking>();
-        puntoInicial = Anglerfish.puntoinicial;
+        Fish = animator.gameObject.GetComponent<Patrulla>();
+        FishTrack = animator.gameObject.GetComponent<EnemyTracking>();
+        puntoInicial = Fish.puntosMovimientos[Fish.siguientePaso].position;
+        Fish.OnChase = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.transform.position = Vector2.MoveTowards(animator.transform.position, puntoInicial, velocidadMovimiento * Time.deltaTime);
-        Anglerfish.Girar(puntoInicial);
+        animator.transform.position = Vector2.MoveTowards(animator.transform.position, puntoInicial, velocidadMovimiento * Time.deltaTime * GM.GameTime);
+        FishTrack.Girar(puntoInicial);
         if(animator.transform.position == puntoInicial)
         {
             animator.SetTrigger("Llego");

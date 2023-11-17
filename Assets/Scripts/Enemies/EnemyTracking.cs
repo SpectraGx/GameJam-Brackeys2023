@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyTracking : MonoBehaviour
@@ -22,13 +20,13 @@ public class EnemyTracking : MonoBehaviour
 
     private void Update()
     {
-        distancia = Vector2.Distance(puntoinicial, jugador.position);
+        distancia = Vector2.Distance(transform.position, jugador.position);
         animator.SetFloat("Distancia", distancia);
     }
 
     public void Girar(Vector3 objective)
     {
-    if((objective.x > 0 && transform.localScale.x != 1) || (objective.x < 0 && transform.localScale.x != -1))
+    if((objective.x > 0 && transform.localScale.x != -1) || (objective.x < 0 && transform.localScale.x != 1))
         {
             Vector3 transformScale = transform.localScale;
             transformScale.x *= -1;

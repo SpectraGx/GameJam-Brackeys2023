@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Patrulla : MonoBehaviour
 {
+    [SerializeField] GameController GM;
     [SerializeField] private float velocidadMovimiento;
-    [SerializeField] private Transform[] puntosMovimientos;
+    [SerializeField] public Transform[] puntosMovimientos;
 
     [SerializeField] private float distanciaMinima;
 
-    private int siguientePaso = 0;
+    public int siguientePaso = 0;
+    public bool OnChase = false;
 
 
     private void Start()
@@ -22,24 +22,29 @@ public class Patrulla : MonoBehaviour
 
     private void Update()
     {
-        transform.localPosition = Vector3.MoveTowards(transform.position, puntosMovimientos[siguientePaso].position, velocidadMovimiento * Time.deltaTime);
         Girar();
-
-        if(Vector2.Distance(transform.localPosition, puntosMovimientos[siguientePaso].position) < distanciaMinima)
+        if(!OnChase)
         {
+            transform.localPosition = Vector3.MoveTowards(transform.position, puntosMovimientos[siguientePaso].position, velocidadMovimiento * Time.deltaTime * GM.GameTime);
 
-            siguientePaso += 1;
-            if (siguientePaso >= puntosMovimientos.Length)
+
+            if(Vector2.Distance(transform.localPosition, puntosMovimientos[siguientePaso].position) < distanciaMinima)
             {
-                siguientePaso = 0;
+
+                siguientePaso += 1;
+                if (siguientePaso >= puntosMovimientos.Length)
+                {
+                    siguientePaso = 0;
+                }
             }
         }
+
     }
 
-    private void Girar() 
+    public void Girar() 
     {
 
-        if((puntosMovimientos[siguientePaso].position.x > 0 && transform.localScale.x != 1) || (puntosMovimientos[siguientePaso].position.x < 0 && transform.localScale.x != -1))
+        if((puntosMovimientos[siguientePaso].position.x > 0 && transform.localScale.x != -1) || (puntosMovimientos[siguientePaso].position.x < 0 && transform.localScale.x != 1))
         {
             Vector3 transformScale = transform.localScale;
             transformScale.x *= -1;

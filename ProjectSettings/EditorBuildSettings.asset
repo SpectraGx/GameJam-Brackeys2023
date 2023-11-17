@@ -6,17 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Roberto/Otras escenas/MainMenu.unity
-    guid: 260c6fb06b15e364f9f3a5b19eb926f2
+    path: Assets/Scenes/Menu.unity
+    guid: c28c7e47e1544184ba6da01fe0d225e0
   - enabled: 1
-    path: Assets/Scenes/Roberto/Otras escenas/GamePlay.unity
-    guid: de3c155f4bf69394f9f30b73e3c92481
-  - enabled: 1
-    path: Assets/Scenes/Roberto/Otras escenas/Zona Profunda.unity
-    guid: 7027a068eb8408f4aa422e94a33318f8
-  - enabled: 1
-    path: Assets/Scenes/Death.unity
-    guid: 682bdf8b1f1c3f94c9e57d0140bb2904
+    path: Assets/Scenes/NewScenes/Gameplay1.unity
+    guid: 455f10c17c454e04291f2166338a6d2c
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: e4ae3a36a43d0c54584dbdfc1bb24e98

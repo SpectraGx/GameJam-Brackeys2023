@@ -26,7 +26,8 @@ public class AudoManger : MonoBehaviour
 
     private void Start()
     {
-        MusicSource.clip = SongMenu;
+     
+        MusicSource.clip = SongJefe;
         MusicSource.Play();
     }
 

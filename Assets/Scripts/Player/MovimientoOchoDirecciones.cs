@@ -62,7 +62,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Key"){
+        if (other.tag == "Key" && Input.GetKeyDown(KeyCode.E)){
             respawnPoint = transform.position;
         }
 

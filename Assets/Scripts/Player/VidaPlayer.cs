@@ -6,6 +6,7 @@ public class VidaPlayer : MonoBehaviour
     public GameController GM;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    [SerializeField] MovimientoOchoDirecciones Player;
     private string currentState;
 
     [SerializeField] TriggerBoss Trigger;
@@ -98,8 +99,12 @@ public class VidaPlayer : MonoBehaviour
 
     public void OnDeath()
     {
-        GM.isBossActive = false;
-        Trigger.RestartBoss();
+        if(GM.isBossActive)
+        {
+            GM.isBossActive = false;
+            Trigger.RestartBoss();
+        }
+        Player.Respawn();
         //insert here respawn logic
     }
 }

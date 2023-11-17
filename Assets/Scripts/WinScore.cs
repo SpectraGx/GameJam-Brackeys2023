@@ -3,15 +3,16 @@ using TMPro;
 
 public class WinScore : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GameController GM;
+    [SerializeField] TextMeshProUGUI PartsCount;
+    [SerializeField] TextMeshProUGUI DeathCount;
+    [SerializeField] TextMeshProUGUI TotalScore;
     void Start()
     {
-        
+        PartsCount.text = "x " + GM.PartsCount + " = " + GM.PartsCount * 1000;
+        DeathCount.text = "x " + GM.DeathCount + " = " + GM.DeathCount * -1000;
+        TotalScore.text = "Final Score = " + (10000 + (GM.PartsCount * 1000) + (GM.DeathCount * -1000));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

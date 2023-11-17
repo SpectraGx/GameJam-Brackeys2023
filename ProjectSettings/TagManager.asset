@@ -12,6 +12,7 @@ TagManager:
   - mimic2
   - mimic3
   - Siuuu
+  - Key
   layers:
   - Default
   - TransparentFX

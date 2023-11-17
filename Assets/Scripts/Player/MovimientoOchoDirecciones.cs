@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -8,6 +9,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     [SerializeField] GameController GM;
     Rigidbody2D rb;
     public float recoverySpeed = 0.5f;
+    private Vector3 respawnPoint;
 
 
     void Awake()
@@ -15,9 +17,8 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         GM.currentSpeed = GM.maxSpeed;
+        respawnPoint = transform.position;
     }
-
-    
 
     void Update()
     {
@@ -32,7 +33,10 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
         Inputs();
         
-
+        if (GM.PlayerHP<=0){
+            transform.position = respawnPoint;
+            GM.PlayerHP=3;
+        }
         
     }
 
@@ -50,7 +54,12 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         rb.velocity = new Vector2(inputSystem.xMove * GM.currentSpeed * GM.GameTime, inputSystem.yMove * GM.currentSpeed * GM.GameTime);
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Key"){
+            respawnPoint = transform.position;
+        }
+    }
+
 }
 
 

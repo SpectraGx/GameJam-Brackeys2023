@@ -4,7 +4,7 @@ using UnityEngine;
 public class SpinConcept : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
-    [SerializeField] float timeFlash = 0.8f;
+    [SerializeField] float timeFlash = 0.10f;
     
     
     void Awake()

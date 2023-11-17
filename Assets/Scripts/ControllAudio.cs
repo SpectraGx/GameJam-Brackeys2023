@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -23,8 +21,13 @@ public class ControllAudio : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+
     public void EjecutarSound(AudioClip sound)
     {
         audioSource?.PlayOneShot(sound);
+    }
+
+    public void PauseMusic(){
+        audioSource?.Stop();
     }
 }

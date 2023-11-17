@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Pez_SeguirBehaivor : StateMachineBehaviour
 {
 
+    [SerializeField] GameController GM;
     [SerializeField] private float velocidadMovimineto;
 
-    [SerializeField] private float tiempoBase;
 
-    private float tiempoSeguir;
+
 
     private Transform jugador;
 
-    private EnemyTracking Anglerfish;
+
+    private Patrulla Fish;
+    private EnemyTracking FishTrack;
 
 
 
@@ -21,9 +21,10 @@ public class Pez_SeguirBehaivor : StateMachineBehaviour
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        tiempoSeguir = tiempoBase;
         jugador = GameObject.FindGameObjectWithTag("nave").GetComponent<Transform>();
-        Anglerfish = animator.gameObject.GetComponent<EnemyTracking>();
+        FishTrack = animator.gameObject.GetComponent<EnemyTracking>();
+        Fish = animator.gameObject.GetComponent<Patrulla>();
+        Fish.OnChase = true;
         //animator.transform.position = Anglerfish.transform.position;
     }
 
@@ -31,9 +32,9 @@ public class Pez_SeguirBehaivor : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.transform.position = Vector2.MoveTowards(animator.transform.position, jugador.position, velocidadMovimineto * Time.deltaTime);
-        Anglerfish.Girar(jugador.position);
-        tiempoSeguir -= Time.deltaTime;
+        animator.transform.position = Vector2.MoveTowards(animator.transform.position, jugador.position, velocidadMovimineto * Time.deltaTime * GM.GameTime);
+        FishTrack.Girar(jugador.position);
+        
 
     }
 

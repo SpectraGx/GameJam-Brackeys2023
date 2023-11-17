@@ -12,6 +12,8 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     private Vector3 respawnPoint;
 
 
+
+
     void Awake()
     {
         
@@ -37,6 +39,10 @@ public class MovimientoOchoDirecciones : MonoBehaviour
             transform.position = respawnPoint;
             GM.PlayerHP=3;
         }
+
+        if (GM.isBossActive==true){
+            ControllAudio.Instance.PauseMusic();
+        }
         
     }
 
@@ -58,7 +64,10 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         if (other.tag == "Key"){
             respawnPoint = transform.position;
         }
+
     }
+
+
 
 }
 

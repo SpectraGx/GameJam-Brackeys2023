@@ -52,6 +52,7 @@ public class Boss : MonoBehaviour
                 GM.activeIFrames = GM.playerIFrames;
                 ControllAudio.Instance.EjecutarSound(audioDamage);
                 ScreenShakeV2.Instance.ShakeCamera(scShakeIntensity, scShakeDuration);
+                GM.isBossActive=true;
             }
         }
 

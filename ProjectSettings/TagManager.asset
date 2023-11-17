@@ -13,6 +13,9 @@ TagManager:
   - mimic3
   - Siuuu
   - Key
+  - zona1
+  - zona2
+  - zona3
   layers:
   - Default
   - TransparentFX

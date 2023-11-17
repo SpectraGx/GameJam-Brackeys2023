@@ -8,7 +8,7 @@ public class VidaPlayer : MonoBehaviour
     Animator animator;
     private string currentState;
 
-    [SerializeField] float ShakeForce;
+    [SerializeField] TriggerBoss Trigger;
 
     // Anim States
     [SerializeField] const string Player_Idle = "PlayerFullHP";
@@ -98,6 +98,7 @@ public class VidaPlayer : MonoBehaviour
     public void OnDeath()
     {
         GM.isBossActive = false;
+        Trigger.RestartBoss();
         //insert here respawn logic
     }
 }

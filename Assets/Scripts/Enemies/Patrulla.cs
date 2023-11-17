@@ -44,7 +44,7 @@ public class Patrulla : MonoBehaviour
     public void Girar() 
     {
 
-        if((puntosMovimientos[siguientePaso].position.x > 0 && transform.localScale.x != -1) || (puntosMovimientos[siguientePaso].position.x < 0 && transform.localScale.x != 1))
+        if((puntosMovimientos[siguientePaso].position.x > transform.position.x && transform.localScale.x != -1) || (puntosMovimientos[siguientePaso].position.x < transform.position.x && transform.localScale.x != 1))
         {
             Vector3 transformScale = transform.localScale;
             transformScale.x *= -1;

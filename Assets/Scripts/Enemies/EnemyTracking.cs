@@ -26,7 +26,7 @@ public class EnemyTracking : MonoBehaviour
 
     public void Girar(Vector3 objective)
     {
-    if((objective.x > 0 && transform.localScale.x != -1) || (objective.x < 0 && transform.localScale.x != 1))
+    if((objective.x > transform.position.x && transform.localScale.x != -1) || (objective.x < transform.position.x && transform.localScale.x != 1))
         {
             Vector3 transformScale = transform.localScale;
             transformScale.x *= -1;

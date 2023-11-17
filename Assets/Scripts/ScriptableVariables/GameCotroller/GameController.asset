@@ -19,10 +19,12 @@ MonoBehaviour:
   currentSpeed: 5
   Tangled: 0
   playerIFrames: 2
-  activeIFrames: -246.25497
+  activeIFrames: -194.11235
   respawnPoint: {fileID: 0}
+  DeathCount: 0
+  PartsCount: 0
   KeysAmount: 6
-  KeysObtained: 6
-  gameScore: 230
+  KeysObtained: 0
+  gameScore: 0
   gameHighScore: 0
-  isBossActive: 1
+  isBossActive: 0

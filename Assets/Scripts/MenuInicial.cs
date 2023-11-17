@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuInicial : MonoBehaviour
 {
     
-    public void Jugar ()
+    public void Jugar (string nombre)
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(nombre);
         Debug.Log("Funciona");
 
     }

@@ -16,7 +16,11 @@ public class MimicMachineState : MonoBehaviour
 
     public int MChance;             // Probabilidad de Mimic
 
-    private int mimicCount;
+    //          CONTADOR DE MIMICS          //  
+    public MimicCount mc;
+
+
+    //          SCORE           //
     public float ScoreVar;
     public FloatVariable Score;
 
@@ -106,9 +110,17 @@ public class MimicMachineState : MonoBehaviour
 
     void MimicChance()
     {
-        if (MimicAllow <= 0 || MimicAllow >= 3) MimicAllow = 2;
+        /*if (MimicAllow <= 0 || MimicAllow >= 3) MimicAllow = 2;
         MChance = Random.Range(0, MimicAllow);
-        Debug.Log("tiro" + MChance);
+        Debug.Log("tiro" + MChance);*/
+
+        if (mc.mimicCount<mc.mimicsAllowedinLevel){
+            MChance=1;
+            mc.mimicCount++;
+        }
+        else {
+            MChance=0;
+        }
     }
 
     private void Update()

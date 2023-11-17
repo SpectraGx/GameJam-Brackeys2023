@@ -106,6 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,10 +152,10 @@ TextureImporter:
       name: Carga logo_0
       rect:
         serializedVersion: 2
-        x: 322
-        y: 48
-        width: 4
-        height: 6
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +173,10 @@ TextureImporter:
       name: Carga logo_1
       rect:
         serializedVersion: 2
-        x: 450
-        y: 48
-        width: 4
-        height: 6
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +194,10 @@ TextureImporter:
       name: Carga logo_2
       rect:
         serializedVersion: 2
-        x: 574
-        y: 50
-        width: 12
-        height: 8
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +215,10 @@ TextureImporter:
       name: Carga logo_3
       rect:
         serializedVersion: 2
-        x: 702
-        y: 50
-        width: 12
-        height: 8
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +236,10 @@ TextureImporter:
       name: Carga logo_4
       rect:
         serializedVersion: 2
-        x: 824
-        y: 50
-        width: 24
-        height: 10
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +257,10 @@ TextureImporter:
       name: Carga logo_5
       rect:
         serializedVersion: 2
-        x: 952
-        y: 50
-        width: 24
-        height: 10
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +278,10 @@ TextureImporter:
       name: Carga logo_6
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 50
-        width: 32
-        height: 12
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +299,10 @@ TextureImporter:
       name: Carga logo_7
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 50
-        width: 32
-        height: 14
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +320,10 @@ TextureImporter:
       name: Carga logo_8
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 50
-        width: 36
-        height: 14
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +341,10 @@ TextureImporter:
       name: Carga logo_9
       rect:
         serializedVersion: 2
-        x: 1456
-        y: 50
-        width: 40
-        height: 16
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +362,10 @@ TextureImporter:
       name: Carga logo_10
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 50
-        width: 44
-        height: 18
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +383,10 @@ TextureImporter:
       name: Carga logo_11
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 50
-        width: 48
-        height: 20
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +404,10 @@ TextureImporter:
       name: Carga logo_12
       rect:
         serializedVersion: 2
-        x: 1834
-        y: 50
-        width: 52
-        height: 24
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +425,10 @@ TextureImporter:
       name: Carga logo_13
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 50
-        width: 52
-        height: 24
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +446,10 @@ TextureImporter:
       name: Carga logo_14
       rect:
         serializedVersion: 2
-        x: 2090
-        y: 50
-        width: 52
-        height: 24
+        x: 2048
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +467,10 @@ TextureImporter:
       name: Carga logo_15
       rect:
         serializedVersion: 2
-        x: 2218
-        y: 50
-        width: 52
-        height: 24
+        x: 2176
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +488,10 @@ TextureImporter:
       name: Carga logo_16
       rect:
         serializedVersion: 2
-        x: 2346
-        y: 50
-        width: 52
-        height: 24
+        x: 2304
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +509,10 @@ TextureImporter:
       name: Carga logo_17
       rect:
         serializedVersion: 2
-        x: 2474
-        y: 50
-        width: 52
-        height: 24
+        x: 2432
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +530,10 @@ TextureImporter:
       name: Carga logo_18
       rect:
         serializedVersion: 2
-        x: 2602
-        y: 50
-        width: 52
-        height: 26
+        x: 2560
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +551,10 @@ TextureImporter:
       name: Carga logo_19
       rect:
         serializedVersion: 2
-        x: 2728
-        y: 50
-        width: 56
-        height: 30
+        x: 2688
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +572,10 @@ TextureImporter:
       name: Carga logo_20
       rect:
         serializedVersion: 2
-        x: 2856
-        y: 50
-        width: 56
-        height: 32
+        x: 2816
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +593,10 @@ TextureImporter:
       name: Carga logo_21
       rect:
         serializedVersion: 2
-        x: 2984
-        y: 50
-        width: 56
-        height: 36
+        x: 2944
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +614,10 @@ TextureImporter:
       name: Carga logo_22
       rect:
         serializedVersion: 2
-        x: 3112
-        y: 50
-        width: 56
-        height: 40
+        x: 3072
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +635,10 @@ TextureImporter:
       name: Carga logo_23
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 50
-        width: 56
-        height: 42
+        x: 3200
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +656,10 @@ TextureImporter:
       name: Carga logo_24
       rect:
         serializedVersion: 2
-        x: 3368
-        y: 50
-        width: 56
-        height: 46
+        x: 3328
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +677,10 @@ TextureImporter:
       name: Carga logo_25
       rect:
         serializedVersion: 2
-        x: 3496
-        y: 50
-        width: 56
-        height: 48
+        x: 3456
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +698,10 @@ TextureImporter:
       name: Carga logo_26
       rect:
         serializedVersion: 2
-        x: 3624
-        y: 50
-        width: 56
-        height: 48
+        x: 3584
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +719,10 @@ TextureImporter:
       name: Carga logo_27
       rect:
         serializedVersion: 2
-        x: 3752
-        y: 50
-        width: 56
-        height: 50
+        x: 3712
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +740,10 @@ TextureImporter:
       name: Carga logo_28
       rect:
         serializedVersion: 2
-        x: 3880
-        y: 50
-        width: 56
-        height: 54
+        x: 3840
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +761,10 @@ TextureImporter:
       name: Carga logo_29
       rect:
         serializedVersion: 2
-        x: 4008
-        y: 50
-        width: 56
-        height: 66
+        x: 3968
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

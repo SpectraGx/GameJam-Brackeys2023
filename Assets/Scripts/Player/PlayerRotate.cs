@@ -4,6 +4,10 @@ public class PlayerRotate : MonoBehaviour
 {
     [Header("InputSystem ScriptableObject")]
     [SerializeField] InputSystem inputSystem;
+
+    [Header("GameController ScriptableObject")]
+    [SerializeField] GameController GM;
+
     
     [Header("Rotation Data")]
     [SerializeField] float rotateSmooth;
@@ -20,7 +24,7 @@ public class PlayerRotate : MonoBehaviour
 
     void Update()
     {
-        if((!inputSystem.moveL && !inputSystem.moveR) || (!inputSystem.moveL && !inputSystem.moveR))
+        if(((!inputSystem.moveL && !inputSystem.moveR) || (!inputSystem.moveL && !inputSystem.moveR)) && !GM.isGamePaused)
         {
             targetRotation = Quaternion.Euler(0, 0, 0);
         }

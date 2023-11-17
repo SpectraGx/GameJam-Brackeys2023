@@ -87,6 +87,7 @@ public class MimicMachineState : MonoBehaviour
         {
             if (Collision.gameObject.CompareTag("nave"))
             {
+                GM.PartsCount++;
                 GM.gameScore += 1000;
                 ControllAudio.Instance.EjecutarSound(audioTes);
                 Destroy(gameObject);

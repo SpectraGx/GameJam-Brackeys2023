@@ -23,6 +23,8 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         GM.isBossActive = false;
         GM.KeysObtained = 0;
         GM.gameScore = 0;
+        GM.DeathCount = 0;
+        GM.PartsCount = 0;
     }
 
     void Update()
@@ -68,6 +70,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
     public void Respawn()
     {
+        GM.DeathCount++;
         transform.position = respawnPoint;
         GM.PlayerHP = 3;
     }

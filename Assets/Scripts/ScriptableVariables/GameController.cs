@@ -31,8 +31,8 @@ public class GameController : ScriptableObject
     [Tooltip("The position to respawn, DO NOT set it to anything")]
     [SerializeField] public Transform respawnPoint;
 
-    [SerializeField] int DeathCount = 0;
-    [SerializeField] int PartsCount = 0;
+    [SerializeField] public int DeathCount = 0;
+    [SerializeField] public int PartsCount = 0;
     [Space(10)]
 
     [Header("GameData")]

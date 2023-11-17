@@ -16,10 +16,13 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
     void Awake()
     {
-        
         rb = GetComponent<Rigidbody2D>();
         GM.currentSpeed = GM.maxSpeed;
         respawnPoint = transform.position;
+        GM.PlayerHP = 3;
+        GM.isBossActive = false;
+        GM.KeysObtained = 0;
+        GM.gameScore = 0;
     }
 
     void Update()
@@ -35,10 +38,6 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
         Inputs();
         
-        if (GM.PlayerHP<=0){
-            transform.position = respawnPoint;
-            GM.PlayerHP=3;
-        }
 
         if (GM.isBossActive==true){
             ControllAudio.Instance.PauseMusic();
@@ -67,7 +66,11 @@ public class MovimientoOchoDirecciones : MonoBehaviour
 
     }
 
-
+    public void Respawn()
+    {
+        transform.position = respawnPoint;
+        GM.PlayerHP = 3;
+    }
 
 }
 

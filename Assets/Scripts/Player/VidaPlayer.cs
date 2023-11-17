@@ -61,6 +61,7 @@ public class VidaPlayer : MonoBehaviour
             case 0:
                 {
                     ChangeAnimationsState(Player_Death);
+                    OnDeath();
                     break;
                 }
         }

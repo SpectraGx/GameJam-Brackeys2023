@@ -21,8 +21,7 @@ public class MimicMachineState : MonoBehaviour
 
 
     //          SCORE           //
-    public float ScoreVar;
-    public FloatVariable Score;
+
 
     public int MimicAllow;
 
@@ -88,7 +87,7 @@ public class MimicMachineState : MonoBehaviour
         {
             if (Collision.gameObject.CompareTag("nave"))
             {
-                GM.gameScore += 10;
+                GM.gameScore += 1000;
                 ControllAudio.Instance.EjecutarSound(audioTes);
                 Destroy(gameObject);
             }

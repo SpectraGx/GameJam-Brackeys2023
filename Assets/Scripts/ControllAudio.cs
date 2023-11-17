@@ -25,4 +25,8 @@ public class ControllAudio : MonoBehaviour
     {
         audioSource?.PlayOneShot(sound);
     }
+
+    public void PauseMusic(){
+        audioSource?.Pause();
+    }
 }

@@ -5,6 +5,7 @@ public class Boss : MonoBehaviour
     public float moveSpeed = 5f; // Velocidad de movimiento del enemigo
 
     [SerializeField] private AudioClip audioDamage;
+    [SerializeField] private AudioClip music;
 
 
     [SerializeField] float scShakeIntensity = 5f;
@@ -52,6 +53,8 @@ public class Boss : MonoBehaviour
                 GM.activeIFrames = GM.playerIFrames;
                 ControllAudio.Instance.EjecutarSound(audioDamage);
                 ScreenShakeV2.Instance.ShakeCamera(scShakeIntensity, scShakeDuration);
+                ControllAudio.Instance.EjecutarSound(music);
+                GM.isBossActive=true;
             }
         }
 

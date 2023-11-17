@@ -4,7 +4,7 @@ using UnityEngine;
 public class AudoManger : MonoBehaviour
 {
 
-    [Header("------------------Audio Sorce------------")]
+    [Header("------------------Audio SFX------------")]
     [SerializeField] AudioSource MusicSource;
     [SerializeField] AudioSource SFXSource;
 
@@ -26,8 +26,7 @@ public class AudoManger : MonoBehaviour
 
     private void Start()
     {
-     
-        MusicSource.clip = SongJefe;
+        MusicSource.clip = SongMenu;
         MusicSource.Play();
     }
 

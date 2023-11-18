@@ -6,13 +6,14 @@ using System;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] GameController GM;
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 5)] private string[] dialogueLines;
 
 
-    private float typingTime = 0.05f;
+    [SerializeField] float typingTime = 0.1f;
 
 
     private bool isPlayerInRange;
@@ -26,6 +27,7 @@ public class Dialogue : MonoBehaviour
 
             if (!didDialogueStart)
             {
+                GM.respawnPoint = transform.position;
                 StartDialogue();
 
             }
@@ -47,7 +49,7 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
         lineIndex = 0;
-        Time.timeScale = 0f;
+        GM.GameTime = 0f;
         StartCoroutine(ShowLine());
     }
 
@@ -63,7 +65,7 @@ public class Dialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
-            Time.timeScale = 1f;
+            GM.GameTime = 1f;
             Destroy(gameObject);
 
         }

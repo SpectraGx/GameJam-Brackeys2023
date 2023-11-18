@@ -29,7 +29,7 @@ public class GameController : ScriptableObject
     [SerializeField] public float activeIFrames = 0;
 
     [Tooltip("The position to respawn, DO NOT set it to anything")]
-    [SerializeField] public Transform respawnPoint;
+    [SerializeField] public Vector3 respawnPoint;
 
     [SerializeField] public int DeathCount = 0;
     [SerializeField] public int PartsCount = 0;

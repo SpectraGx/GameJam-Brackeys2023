@@ -9,7 +9,7 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     [SerializeField] GameController GM;
     Rigidbody2D rb;
     public float recoverySpeed = 0.5f;
-    private Vector3 respawnPoint;
+
 
 
 
@@ -18,7 +18,6 @@ public class MovimientoOchoDirecciones : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         GM.currentSpeed = GM.maxSpeed;
-        respawnPoint = transform.position;
         GM.PlayerHP = 3;
         GM.isBossActive = false;
         GM.KeysObtained = 0;
@@ -61,17 +60,10 @@ public class MovimientoOchoDirecciones : MonoBehaviour
         rb.velocity = new Vector2(inputSystem.xMove * GM.currentSpeed * GM.GameTime, inputSystem.yMove * GM.currentSpeed * GM.GameTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Key" && Input.GetKeyDown(KeyCode.E)){
-            respawnPoint = transform.position;
-        }
-
-    }
-
     public void Respawn()
     {
         GM.DeathCount++;
-        transform.position = respawnPoint;
+        transform.position = GM.respawnPoint;
         GM.PlayerHP = 3;
     }
 

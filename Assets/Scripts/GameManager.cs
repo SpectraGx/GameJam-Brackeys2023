@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameController GM;
-    [SerializeField] Transform StartPoint;
+    [SerializeField] Vector3 StartPoint;
 
 
     private void Awake()

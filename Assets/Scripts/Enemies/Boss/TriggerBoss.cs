@@ -43,7 +43,7 @@ public class TriggerBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("nave"))
+        if (other.gameObject.CompareTag("nave") && GM.KeysObtained >= GM.KeysAmount)
         {
             ChangeAnimationsState(M_Awakes);
             

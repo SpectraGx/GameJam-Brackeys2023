@@ -28,6 +28,7 @@ public class Dialogue : MonoBehaviour
             if (!didDialogueStart)
             {
                 GM.respawnPoint = transform.position;
+                GM.KeysObtained++;
                 StartDialogue();
 
             }
@@ -78,7 +79,7 @@ public class Dialogue : MonoBehaviour
         foreach (char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
-            yield return new WaitForSecondsRealtime(typingTime);
+            yield return new WaitForSeconds(typingTime);
         }
     }
 
